@@ -1,0 +1,26 @@
+// стандартні стилі для кнопки, якщо ваша кнопка напівпрозора, треба дописати їй клас і значення opacity:0.4 і змінити колір бордера при ховері
+.button {
+  border-radius: 25px;
+  background: $black;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $accentYellow;
+  border: 2px solid #ffffff;
+  transition: background 250ms linear, border 250ms linear;
+  &:hover,
+  &:focus {
+    background: $white;
+    border: 2px solid #f3c653;
+  }
+}
+.link {
+  padding: 8px;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: $white;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+}
