@@ -1,0 +1,34 @@
+@mixin forPhoneOnly {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin forTabletUp {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin forDesktop {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100hw;
+  @media screen and (max-width: 414px) {
+    max-width: 414px;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 0 47px;
+    width: 1024px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 0 85px;
+    width: 1280px;
+  }
+}
