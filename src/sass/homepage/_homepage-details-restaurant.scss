@@ -1,0 +1,119 @@
+.details-restaurant {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: $black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(../images/homepage-images/details-restaurant/details-restaurant_mobile.jpg);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 414px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/homepage-images/details-restaurant/details-restaurant_mobile@2x.jpg);
+  }
+
+  @include forTabletUp {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/homepage-images/details-restaurant/details-restaurant_tablet.jpg);
+    max-width: 1024px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/homepage-images/details-restaurant/details-restaurant_tablet@2x.jpg);
+    }
+  }
+
+  @include forDesktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/homepage-images/details-restaurant/details-restaurant_desktop.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/homepage-images/details-restaurant/details-restaurant_desktop@2x.jpg);
+    }
+  }
+}
+.details-restaurant__name{
+  margin-bottom: 12px;
+    font-family: 'Film P3';
+font-size: 40px;
+line-height: 1.07;
+letter-spacing: 0.3em;
+color: $white;
+@include forDesktop{
+    font-size: 64px;
+line-height: 1.07;
+
+}
+}
+.details-restaurant__title{
+    margin-bottom: 20px;
+    font-weight: 700;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: $white;
+@include forTabletUp{
+ font-size: 24px;
+line-height: 1.2;
+}
+}
+.details-restaurant__text{
+    margin-bottom: 48px;
+    font-weight: 600;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+color: #BABABA;
+@include forTabletUp{
+    font-size: 16px;
+line-height: 1.25;
+}
+}
+.details-restaurant__pics{
+    display: flex;
+    margin-bottom: 80px;
+}
+.details-restaurant__button{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 14px 24px;
+    &:hover, 
+    &:focus{
+    border: 2px solid #FFFFFF;
+    }
+}
