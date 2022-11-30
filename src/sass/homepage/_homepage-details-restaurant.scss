@@ -27,6 +27,8 @@
   }
 
   @include forTabletUp {
+    padding-top: 48px;
+    padding-bottom: 40px;
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
@@ -68,19 +70,12 @@
     }
   }
 }
-.details-restaurant__name{
-  margin-bottom: 12px;
-    font-family: 'Film P3';
-font-size: 40px;
-line-height: 1.07;
-letter-spacing: 0.3em;
-color: $white;
-@include forDesktop{
-    font-size: 64px;
-line-height: 1.07;
 
+.details-restaurant__name{
+color: $white;
+margin-bottom: 12px;
 }
-}
+
 .details-restaurant__title{
     margin-bottom: 20px;
     font-weight: 700;
@@ -94,7 +89,6 @@ line-height: 1.2;
 }
 }
 .details-restaurant__text{
-    margin-bottom: 48px;
     font-weight: 600;
 font-size: 12px;
 line-height: 1.25;
@@ -105,25 +99,44 @@ color: #BABABA;
 line-height: 1.25;
 }
 }
+.details-restaurant__container{
+width: 67%;
+max-width: 259px;
+margin-bottom: 48px;
+margin-left: auto;
+}
 .details-restaurant__pics{
     display: flex;
     margin-bottom: 80px;
     gap: 20px;
+    margin-left: 25px;
+    margin-right: -15px;
+}
+.details-restaurant__first-pics{
+width: 274px;
+}
+.details-restaurant__second-pics{
+  margin-right: -15px;
+}
+.details-restaurant__third-pics{
+display: none;
 }
 .details-restaurant__first-button{
     background: rgba(0, 0, 0, 0.4);
     padding: 14px 24px;
-    margin-bottom: 16px;
+    margin: 0 auto 16px;
+    font-family: inherit;
     &:hover, 
     &:focus{
-    border: 2px solid #FFFFFF;
+    border: 2px solid $white;
     }
 }
 .details-restaurant__second-button{
     padding: 14px 31px;
     background: rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
     &:hover, 
     &:focus{
-    border: 2px solid #FFFFFF;
+    border: 2px solid $white;
     }
 }
