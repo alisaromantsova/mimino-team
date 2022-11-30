@@ -3,6 +3,7 @@
   display: block;
   border-radius: 25px;
   background: $black;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -24,4 +25,18 @@
   color: $white;
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
+}
+
+.brand-name{
+  font-family: 'Film P3';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 1.075;
+letter-spacing: 0.3em;
+color: #494848;
+@include forTabletUp {
+  font-size: 64px;
+line-height: 1.78;
+}
 }
