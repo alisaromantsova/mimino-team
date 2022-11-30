@@ -32,7 +32,11 @@
     @include forTabletUp {
     display: flex;
     gap: 80px;
-}
+    }
+        @include forTabletUp {
+            gap: 159px;
+        }
+
 }
 &__text {    
     margin-top: 16px;  
@@ -59,6 +63,7 @@
     text-transform: uppercase;
 }
 &__button {
+    display: block;
     padding: 20px 42px;
     font-size: 20px;
     font-weight: 500;
