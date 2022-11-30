@@ -1,0 +1,129 @@
+.hotel {
+  background: $fonLemon;
+
+  .container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @media screen and (min-width: 1024px) {
+      position: relative;
+      padding-top: 64px;
+      padding-bottom: 104px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-top: 72px;
+      padding-bottom: 112px;
+    }
+  }
+
+  &__sub-title {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    line-height: 1.15;
+    color: $lightGrayText;
+    margin-bottom: 8px;
+    @media screen and (min-width: 1024px) {
+      font-size: 32px;
+      line-height: 1.156;
+      margin-bottom: 4px;
+    }
+  }
+
+  &__title {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    @media screen and (min-width: 1024px) {
+      font-size: 30px;
+      line-height: 1.13;
+      margin-top: 64px;
+      margin-bottom: 16px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 36px;
+      line-height: 1.139;
+      margin-top: 72px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 258px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $grayText;
+    @media screen and (min-width: 1024px) {
+      max-width: 439px;
+      font-size: 16px;
+      line-height: 1.25;
+      margin-bottom: 176px;
+    }
+    @media screen and (min-width: 1280px) {
+      max-width: 400px;
+      margin-bottom: 188px;
+    }
+  }
+
+  &__main-room-img {
+    margin: 32px 0 32px auto;
+    box-shadow: $littleShadow;
+    @media screen and (min-width: 1024px) {
+      position: absolute;
+      margin: 0;
+      top: -32;
+      right: 112;
+    }
+    @media screen and (min-width: 1024px) {
+      position: absolute;
+      top: -33;
+      right: 180;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      align-items: center;
+      gap: 266px;
+    }
+    @media screen and (min-width: 1280px) {
+      gap: 326px;
+    }
+  }
+
+  &__slider {
+    margin-left: -16px;
+    // margin-bottom: 72px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    @media screen and (min-width: 1024px) {
+      margin-left: 0;
+      gap: 40px;
+    }
+  }
+
+  &__slider-img {
+    box-shadow: $littleShadow;
+  }
+
+  &__button {
+    margin: 0 auto;
+    width: 236px;
+    height: 48px;
+    padding: 0;
+  }
+
+  &__button:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
