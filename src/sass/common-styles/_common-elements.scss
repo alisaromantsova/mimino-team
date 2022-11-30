@@ -1,5 +1,6 @@
 // стандартні стилі для кнопки, якщо ваша кнопка напівпрозора, треба дописати їй клас і значення background: rgba(0, 0, 0, 0.4); і змінити колір бордера при ховері на border: 2px solid #FFFFFF;
 .button {
+  display: block;
   border-radius: 25px;
   background: $black;
   font-weight: 700;
