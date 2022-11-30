@@ -154,6 +154,7 @@ display: none;
 @include forTabletUp{
   display: block;
   width: 162px;
+}
   @include forDesktop{
     width: 270px;
     margin-right: -33px;
