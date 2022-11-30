@@ -554,7 +554,7 @@ ul {
     right: 112;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .hotel__main-room-img {
     position: absolute;
     top: -33;
