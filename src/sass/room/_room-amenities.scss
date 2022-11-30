@@ -1,0 +1,110 @@
+.room-amenities {    
+    background-color: $fonLemon;   
+&__container {   
+    padding: 32px 15px;
+    @include forTabletUp {
+        max-width: 1024px;
+        padding: 48px 47px 40px 47px;
+    }
+    @include forDesktop {
+        padding: 48px 47px; 
+    }
+}
+&__title {
+    font-family: 'Times New Roman';    
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.16;   
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+&__title-text {    
+    font-weight: 700;    
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $gray;
+    margin-bottom: 32px;    
+    @include forTabletUp {
+    max-width: 757px;    
+}
+}
+&__column {
+    @include forTabletUp {
+    display: flex;
+    gap: 80px;
+}
+}
+&__text {    
+    margin-top: 16px;  
+    font-weight: 700;    
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $gray;
+    @include forTabletUp {
+        max-width: 400px;
+    }
+}
+&__list {
+    @include forTabletUp {
+    margin-bottom: 40px;
+}
+}
+&__item {
+    margin-bottom: 32px;
+}
+&__subtitle {
+    font-family: 'Times New Roman';    
+    font-size: 24px;
+    line-height: 1.17;    
+    text-transform: uppercase;
+}
+&__button {
+    padding: 20px 42px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;    
+    margin: 0 auto;
+    background: $black;
+    border: 1px solid $accentYellow;
+    border-radius: 25px;
+    color: $white;
+    width: 100%;
+    max-width: 384px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    &:hover {
+        background: $accentYellow;        
+        color: $black;
+    }
+        @include forTabletUp {
+            margin-right: 0;
+            max-width: 434px;
+        }
+}
+&__link {   
+    display: flex;
+    gap: 12px;
+    justify-content: center;    
+    font-weight: 500;    
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $brown;
+    text-decoration: none;
+    &:hover {
+        color: $accentYellow;
+    }
+        @include forTabletUp {
+            justify-content: flex-end;
+            font-size: 20px;
+            line-height: 1.2;
+            gap: 16px;
+        }
+}
+&__icon {
+    fill: $brown;
+    .room-amenities__link:hover & {
+        fill: $accentYellow;
+    }
+
+}
+}

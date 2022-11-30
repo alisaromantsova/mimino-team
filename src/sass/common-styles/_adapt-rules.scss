@@ -19,8 +19,8 @@
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  width: 100hw;
-  @media screen and (max-width: 414px) {
+  width: 100vw;
+  @media screen and (max-width: 1023px) {
     max-width: 414px;
   }
   @media screen and (min-width: 1024px) {
