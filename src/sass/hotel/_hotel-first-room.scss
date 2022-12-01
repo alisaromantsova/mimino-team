@@ -4,7 +4,7 @@
   .container {
     padding-top: 32px;
     padding-bottom: 32px;
-  @include forTabletUp {
+    @include forTabletUp {
       position: relative;
       padding-top: 64px;
       padding-bottom: 104px;
@@ -21,7 +21,7 @@
     line-height: 1.15;
     color: $lightGrayText;
     margin-bottom: 8px;
-  @include forTabletUp {
+    @include forTabletUp {
       font-size: 32px;
       line-height: 1.156;
       margin-bottom: 4px;
@@ -36,7 +36,7 @@
     letter-spacing: 0.05em;
     margin-top: 32px;
     margin-bottom: 12px;
-  @include forTabletUp {
+    @include forTabletUp {
       font-size: 30px;
       line-height: 1.13;
       margin-top: 64px;
@@ -58,7 +58,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $grayText;
-  @include forTabletUp {
+    @include forTabletUp {
       max-width: 439px;
       font-size: 16px;
       line-height: 1.25;
@@ -73,7 +73,7 @@
   &__main-room-img {
     margin: 32px 0 32px auto;
     box-shadow: $littleShadow;
-  @include forTabletUp {
+    @include forTabletUp {
       position: absolute;
       margin: 0;
       top: -32;
@@ -90,7 +90,7 @@
     display: flex;
     flex-direction: column;
     gap: 72px;
-  @include forTabletUp {
+    @include forTabletUp {
       flex-direction: row;
       align-items: center;
       gap: 266px;
@@ -106,7 +106,7 @@
     display: flex;
     flex-direction: row;
     gap: 16px;
-  @include forTabletUp {
+    @include forTabletUp {
       margin-left: 0;
       gap: 40px;
     }
@@ -119,11 +119,14 @@
   &__button {
     margin: 0 auto;
     width: 236px;
-    height: 48px;
-    padding: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 
   &__button:not(:last-child) {
     margin-bottom: 16px;
+
+    text-decoration: none;
+    text-align: center;
   }
 }
