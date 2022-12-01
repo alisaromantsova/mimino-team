@@ -11,7 +11,7 @@ padding-bottom: 48px;
 }
 &__container{
     @include forDesktop {
-        padding-right: 198px;
+        padding-right: 136px;
     }
 }
 &__title {
@@ -32,15 +32,19 @@ margin-bottom: 32px;
 @include forTabletUp {
 max-width: 757px;    
 }
+@include forDesktop {
+   max-width: 1058px;
+    }
 }
+
 &__column {
 
 @include forTabletUp {
 display: flex;
 gap: 80px;
 }
-@include forTabletUp {
-gap: 133px;
+@include forDesktop {
+gap: 58px;
 }
 
 }
@@ -53,7 +57,7 @@ color: $gray;
 max-width: 400px;
 }
 @include forDesktop{
-    max-width: 426px;
+    max-width: 500px;
 }
 }
 &__list {
@@ -96,6 +100,10 @@ color: $black;
 margin-right: 0;
 max-width: 434px;
 }
+@include forDesktop{
+    padding: 20px 71px;
+    max-width: 500px;
+}
 }
 &__link {   
 display: flex;
@@ -103,7 +111,7 @@ gap: 12px;
 justify-content: center;    
 font-weight: 500;    
 line-height: 1.25;
-letter-spacing: 0.02em;
+letter-spacing: 0.115em;
 color: $brown;
 text-decoration: none;
 &:hover {
