@@ -11,7 +11,7 @@ padding-bottom: 48px;
 }
 &__container{
     @include forDesktop {
-        padding-right: 136px;
+        padding-right: 198px;
     }
 }
 &__title {
@@ -30,21 +30,17 @@ letter-spacing: 0.02em;
 color: $gray;
 margin-bottom: 32px;    
 @include forTabletUp {
-max-width: 930px;    
+max-width: 757px;    
 }
-@include forDesktop {
-   max-width: 1058px;
-    }
 }
-
 &__column {
 
 @include forTabletUp {
 display: flex;
-gap: 30px;
+gap: 80px;
 }
-@include forDesktop {
-gap: 58px;
+@include forTabletUp {
+gap: 133px;
 }
 
 }
@@ -54,10 +50,10 @@ line-height: 1.25;
 letter-spacing: 0.02em;
 color: $gray;
 @include forTabletUp {
-max-width: 450px;
+max-width: 400px;
 }
 @include forDesktop{
-    max-width: 500px;
+    max-width: 426px;
 }
 }
 &__list {
@@ -98,11 +94,7 @@ color: $black;
 }
 @include forTabletUp {
 margin-right: 0;
-max-width: 450px;
-}
-@include forDesktop{
-    padding: 20px 71px;
-    max-width: 500px;
+max-width: 434px;
 }
 }
 &__link {   
@@ -122,9 +114,6 @@ justify-content: flex-end;
 font-size: 20px;
 line-height: 1.2;
 gap: 16px;
-}
-@include forDesktop{
-    letter-spacing: 0.115em;
 }
 }
 &__icon {
