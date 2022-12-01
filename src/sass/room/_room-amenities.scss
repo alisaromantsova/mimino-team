@@ -30,7 +30,7 @@ letter-spacing: 0.02em;
 color: $gray;
 margin-bottom: 32px;    
 @include forTabletUp {
-max-width: 757px;    
+max-width: 930px;    
 }
 @include forDesktop {
    max-width: 1058px;
@@ -41,7 +41,7 @@ max-width: 757px;
 
 @include forTabletUp {
 display: flex;
-gap: 80px;
+gap: 30px;
 }
 @include forDesktop {
 gap: 58px;
@@ -54,7 +54,7 @@ line-height: 1.25;
 letter-spacing: 0.02em;
 color: $gray;
 @include forTabletUp {
-max-width: 400px;
+max-width: 450px;
 }
 @include forDesktop{
     max-width: 500px;
@@ -98,7 +98,7 @@ color: $black;
 }
 @include forTabletUp {
 margin-right: 0;
-max-width: 434px;
+max-width: 450px;
 }
 @include forDesktop{
     padding: 20px 71px;
@@ -111,7 +111,7 @@ gap: 12px;
 justify-content: center;    
 font-weight: 500;    
 line-height: 1.25;
-letter-spacing: 0.115em;
+letter-spacing: 0.02em;
 color: $brown;
 text-decoration: none;
 &:hover {
@@ -122,6 +122,9 @@ justify-content: flex-end;
 font-size: 20px;
 line-height: 1.2;
 gap: 16px;
+}
+@include forDesktop{
+    letter-spacing: 0.115em;
 }
 }
 &__icon {
