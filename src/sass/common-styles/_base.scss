@@ -1,7 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
 }
 h1,
 h3,
@@ -16,7 +16,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
+  background: #dadada;
+  border-radius: 2px;
 }
 
 ul {

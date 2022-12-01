@@ -1,5 +1,5 @@
 .details-restaurant {
-  padding-top: 20px;
+  padding-top: 24px;
   padding-bottom: 40px;
   background-color: $black;
   background-position: center;
@@ -123,9 +123,7 @@ margin-left: auto;
     display: flex;
     margin-bottom: 80px;
     gap: 20px;
-    margin-left: 25px;
-    margin-right: -15px;
-
+ justify-content: flex-end;
     @include forTabletUp{
       margin-bottom: 0;
       margin-left: 0;
@@ -142,10 +140,8 @@ width: 274px;
 }
 }
 .details-restaurant__second-pics{
-  margin-right: -15px;
   width: 80px;
    @include forTabletUp{
-    margin-right: 0;
     width: 162px;
    }
 }
@@ -163,7 +159,7 @@ display: none;
 
 .details-restaurant__first-button{
     background: rgba(0, 0, 0, 0.4);
-    padding: 14px 24px;
+    padding: 14px 22px;
     margin: 0 auto 16px;
     font-family: inherit;
     &:hover, 
@@ -172,7 +168,7 @@ display: none;
     }
 }
 .details-restaurant__second-button{
-    padding: 14px 31px;
+    padding: 14px 26px;
     background: rgba(0, 0, 0, 0.4);
     margin: 0 auto;
     &:hover, 
@@ -181,10 +177,14 @@ display: none;
     }
 }
 .details-restaurant__wrapper{
+   margin-left: -15px;
+  margin-right: -15px;
   @include forTabletUp{
   display: flex;
   flex-direction: row-reverse;
   gap: 29px;
+  margin-left: 0;
+  margin-right: 0;
 }
 @include forDesktop{
   gap: 32px;
