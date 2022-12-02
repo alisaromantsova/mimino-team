@@ -11,6 +11,7 @@
   color: $accentYellow;
   border: 2px solid #ffffff;
   outline: none;
+  cursor: pointer;
   transition: background 250ms linear, border 250ms linear;
   &:hover,
   &:focus {
@@ -60,4 +61,11 @@ color: $white;
 text-transform: uppercase;
 border: none;
 outline: none;
+cursor: pointer;
+ transition: background 250ms linear, color 250ms linear;
+&:hover, 
+&:focus{
+background-color: $accentYellow;
+color: $black;
+}
 }

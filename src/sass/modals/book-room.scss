@@ -14,7 +14,7 @@
   opacity: 0;
   pointer-events: none;
 }
-.modal-table {
+.modal-room {
   position: absolute;
   left: 50%;
   top: 20px;
@@ -25,7 +25,15 @@
   background-color: #fff;
   transform: translateX(-50%);
   z-index: 3;
-}
+  @include forTabletUp {
+    width: 712px;
+    max-width: 712px;
+    padding: 60px;
+    top: 50%;
+    transform: translate(-50% -50%);
+  }
+  }
+
 .modal__close-button {
   border: none;
   outline: none;
@@ -62,6 +70,7 @@
   line-height: 1.15;
   letter-spacing: 0.05em;
   color: #808080;
+  cursor: pointer;
 }
 .form-room__label {
   display: block;
