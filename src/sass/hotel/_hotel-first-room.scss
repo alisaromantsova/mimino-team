@@ -14,6 +14,20 @@
       padding-bottom: 112px;
     }
   }
+  &__top-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 32px;
+    @include forTabletUp {
+      flex-direction: row;
+      gap: 26px;
+      margin-bottom: 0px;
+    }
+    @include forDesktop {
+      gap: 46px;
+    }
+  }
 
   &__sub-title {
     font-family: 'Times New Roman';
@@ -37,14 +51,17 @@
     margin-top: 32px;
     margin-bottom: 12px;
     @include forTabletUp {
+      width: 439px;
       font-size: 30px;
       line-height: 1.13;
       margin-top: 64px;
       margin-bottom: 16px;
     }
     @include forDesktop {
+      width: 507px;
       font-size: 36px;
       line-height: 1.139;
+          letter-spacing: 0.048em;
       margin-top: 72px;
       margin-bottom: 24px;
     }
@@ -71,38 +88,34 @@
   }
 
   &__main-room-img {
-    margin: 32px 0 32px auto;
+    margin-left: auto;
     box-shadow: $littleShadow;
     @include forTabletUp {
-      position: absolute;
-      margin: 0;
-      top: -32;
-      right: 112;
+      margin-top: -96px;
+      // position: absolute;
+      // margin: 0;
+      // top: -32;
+      // right: 112;
     }
     @include forDesktop {
-      position: absolute;
-      top: -33;
-      right: 180;
+      margin-top: -104px;
     }
   }
 
-  &__box {
+  &__bottom-box {
     display: flex;
     flex-direction: column;
     gap: 72px;
     @include forTabletUp {
       flex-direction: row;
       align-items: center;
-      gap: 266px;
-    }
-    @include forDesktop {
-      gap: 326px;
+      justify-content: space-between;
+      // gap: 266px;
     }
   }
 
   &__slider {
     margin-left: -16px;
-    // margin-bottom: 72px;
     display: flex;
     flex-direction: row;
     gap: 16px;
