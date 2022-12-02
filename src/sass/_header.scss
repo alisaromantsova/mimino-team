@@ -1,6 +1,8 @@
 .header {
   position: absolute;
   background-color: transparent;
+  z-index: 2;
+  width: 100%;
 
   &__logo {
     text-decoration: none;
@@ -18,15 +20,15 @@
       margin-right: 52px;
     }
 
-    @media screen and (min-width: 1024px) {
+    @include forTabletUp {
       font-size: 40px;
       line-height: 1.075;
       margin-right: 87px;
       padding: 24px 0;
     }
 
-    @media screen and (min-width: 1280px) {
-      margin-right: 93px;
+    @include forDesktop {
+      margin-right: 96px;
     }
   }
 
@@ -35,7 +37,7 @@
     gap: 6px;
     align-items: center;
 
-    @media screen and (min-width: 1024px) {
+    @include forTabletUp {
       gap: 32px;
     }
   }
@@ -44,7 +46,7 @@
     display: flex;
     gap: 20px;
 
-    @media screen and (min-width: 1024px) {
+    @include forTabletUp {
       gap: 72px;
     }
   }
@@ -54,8 +56,8 @@
     align-items: center;
     gap: 6px;
 
-    @media screen and (min-width: 1024px) {
-      gap: 30px;
+    @include forTabletUp {
+      gap: 32px;
     }
   }
 
@@ -63,7 +65,7 @@
     display: flex;
     align-items: center;
 
-    @media screen and (min-width: 1024px) {
+    @include forTabletUp {
       gap: 16px;
     }
   }
@@ -71,7 +73,7 @@
   &__phone-text {
     display: none;
 
-    @media screen and (min-width: 1024px) {
+    @include forTabletUp {
       display: block;
     }
   }
@@ -87,7 +89,7 @@
     display: block;
     padding: 16px 0;
 
-    @media screen and (min-width: 1024px) {
+    @include forTabletUp {
       padding: 24px 0;
       font-size: 20px;
       line-height: 1.2;
@@ -103,19 +105,21 @@
     line-height: 1.214;
     letter-spacing: 0.02em;
     color: $white;
-    padding: 16px 0;
-
-    @media screen and (min-width: 1024px) {
-      padding: 24px 0;
+  }
+  &__nav-contact--padding {
+    @include forTabletUp {
+      padding: 10px 8px 10px 0;
+      border: 1px solid rgba(243, 198, 83, 0.7);
+      border-radius: 2px;
     }
   }
 
   &__social {
     display: none;
 
-    @media screen and (min-width: 1280px) {
+    @include forDesktop {
       display: flex;
-      gap: 20px;
+      gap: 21px;
       margin-left: 60px;
     }
   }
@@ -127,10 +131,10 @@
     @media screen and (min-width: 414px) {
       display: flex;
     }
+  }
 
-    @media screen and (min-width: 1024px) {
-      margin-right: 8px;
-    }
+  &__phone {
+    display: flex;
   }
 }
 

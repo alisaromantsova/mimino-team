@@ -1,0 +1,129 @@
+.about-kitchen{
+background: $fonLemon;
+}
+.about-kitchen .container{
+     position: relative;
+     padding-top: 16px;
+padding-bottom: 20px;
+@include forTabletUp{
+    padding-top: 129px;
+    padding-bottom: 32px;
+   
+}
+@include forDesktop{
+    padding-top: 120px;
+}
+}
+.about-kitchen__subtitle{
+    margin-bottom: 12px;
+    font-family: 'Times New Roman';
+font-size: 20px;
+line-height: 1.15;
+color: $lightGrayText;
+@include forTabletUp{
+font-size: 32px;
+line-height: 1.6;
+margin-bottom: 4px;
+}
+}
+.about-kitchen__title-text{
+    margin-top: 12px;
+    margin-bottom: 28px;
+    max-width: 258px;
+font-weight: 600;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+color: $grayText;
+@include forTabletUp{
+max-width: 439px;
+margin-top: 24px;
+margin-bottom: 142px;
+font-size: 16px;
+line-height: 1.25;
+}
+@include forDesktop{
+max-width: 518px;
+margin-bottom: 162px;
+}
+}
+.about-kitchen__title-pic{
+margin-left: auto;
+    width: 59vw;
+max-width: 244px;
+box-shadow: $littleShadow;
+@include forTabletUp{
+    width: 400px;
+    max-width: 400px;
+    position: absolute;
+    top: -33px;
+    right: 112px;
+    box-shadow: $bigShadow;
+}
+@include forDesktop{
+    width: 460px;
+    max-width: 460px;
+    right: 180px;
+}
+}
+
+.about-kitchen__wrapper{
+margin-top: 32px;
+margin-bottom: 32px;
+display: flex;
+align-items: center;
+gap: 20px;
+@include forTabletUp{
+    margin-top: 0;
+    gap: 48px;
+    margin-bottom: 0;
+}
+@include forDesktop{
+    gap: 32px;
+}
+}
+.about-kitchen__img{
+width: 48vw;
+max-width: 200px;
+box-shadow: $littleShadow;
+@include forTabletUp{
+    width: 350px;
+    max-width: 350px;
+    box-shadow: $bigShadow;
+}
+@include forDesktop{
+    width: 460px;
+    max-width: 460px;
+}
+}
+
+.about-kitchen__text{
+    font-weight: 600;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+color: $brown;
+max-width: 163px;
+@include forTabletUp{
+    max-width: 312px;
+    font-size: 16px;
+    line-height: 1.25;
+}
+}
+.about-kitchen__pics{
+    display: flex;
+    gap: 24px;
+    justify-content: flex-end;
+    margin-right: -15px;
+    @include forTabletUp{
+        gap: 40px;
+        margin-right: 0;
+        margin-top: -28px;
+    }
+    @include forDesktop{
+        margin-top: -147px;
+    }
+}
+.about-kitchen__pics img{
+    box-shadow: $littleShadow;
+}
