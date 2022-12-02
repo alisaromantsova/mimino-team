@@ -1,18 +1,6 @@
 .footer {
   background-color: $colorFooter;
 
-  @media screen and (min-width: 414px) {
-    width: 414px;
-    margin: 0 auto;
-  }
-
-  @media screen and (min-width: 1024px) {
-    min-width: 1024px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    min-width: 1280px;
-  }
   &__logo {
     font-family: 'Film P3', sans-serif;
     text-decoration: none;
