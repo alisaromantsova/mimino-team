@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="./sass/index.scss" />
     <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
-    <script type="module" src="./index.js"></script>
+    <!-- <script type="module" src="./index.js"></script> -->
   </head>
   <body>
     <!-- Hotel -->
@@ -28,11 +28,13 @@
     <include src="./partials//hotel/hotel-third-room.html"></include>
     <!-- ❗️❗️❗️ Footer-->
     <include src="./partials/footer.html"></include>
-    <!-- ❗️❗️❗️ Modal-->
+
+    <!-- ❗️❗️❗️ Modal (Бронювання номера)-->
     <include src="./partials/modals/book-room.html"></include>
-    <!-- ❗️❗️❗️ Modal-->
-    <include src="./partials/modals/book-table.html"></include>
-    <!-- ❗️❗️❗️ Modal-->
+    <!-- ❗️❗️❗️ Modal (ціни ресторана)-->
     <include src="./partials/modals/room-price.html"></include>
+
+    <script type="module" src="./js/modal-price.js"></script>
+    <script type="module" src="./js/modal-room.js"></script>
   </body>
 </html>
