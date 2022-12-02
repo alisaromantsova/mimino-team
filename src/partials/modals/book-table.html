@@ -6,12 +6,13 @@
       </svg>
     </button>
     <form class="form-table">
-      <h2 class="form-table__title">Забронювати столик</h2>
-      <label class="form-table__label">
+      <h2 class="form__title">Забронювати столик</h2>
+      <div class="form__container">
+      <label class="form__label">
         <input required type="text" placeholder="Ваше ім’я" class="form-table__input" />
         На кого забронювати столик?
       </label>
-      <label class="form-table__label">
+      <label class="form__label">
         <input
         required
           type="tel"
@@ -20,7 +21,9 @@
         />
         Номер телефону
       </label>
-      <label class="form-table__label">
+      </div>
+        <div class="form__container">
+      <label class="form__label form__label--select">
         <select name="people" class="form-table__input">
           <option value="2" selected>2</option>
           <option value="3">3</option>
@@ -30,7 +33,7 @@
         </select>
         Столик на яку кількість осіб?
       </label>
-      <label class="form-table__label">
+      <label class="form__label form__label--select">
         <select name="date" class="form-table__input">
           <option value="06.12" selected>Сьогодні</option>
           <option value="07.12">Завтра</option>
@@ -39,6 +42,7 @@
         </select>
         На яку дату бронювати?
       </label>
+      </div>
       <button type="submit" class="form-button">Оформити бронювання</button>
     </form>
   </div>
