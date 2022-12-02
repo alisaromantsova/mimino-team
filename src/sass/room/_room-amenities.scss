@@ -77,7 +77,7 @@
     max-width: 384px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    &:hover {
+    &:hover, &:focus {
         background: $accentYellow;        
         color: $black;
     }
@@ -95,7 +95,7 @@
     letter-spacing: 0.02em;
     color: $brown;
     text-decoration: none;
-    &:hover {
+    &:hover, &:focus {
         color: $accentYellow;
     }
         @include forTabletUp {
@@ -110,6 +110,8 @@
     .room-amenities__link:hover & {
         fill: $accentYellow;
     }
-
+        .room-amenities__link:focus & {
+            fill: $accentYellow;
+        }
 }
 }
