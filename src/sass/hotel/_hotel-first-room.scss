@@ -50,6 +50,7 @@
     letter-spacing: 0.05em;
     margin-top: 32px;
     margin-bottom: 12px;
+    text-transform: uppercase;
     @include forTabletUp {
       width: 439px;
       font-size: 30px;
@@ -57,11 +58,14 @@
       margin-top: 64px;
       margin-bottom: 16px;
     }
+    .hotel-title__span {
+      text-transform: lowercase;
+    }
     @include forDesktop {
       width: 507px;
       font-size: 36px;
       line-height: 1.139;
-          letter-spacing: 0.048em;
+      letter-spacing: 0.048em;
       margin-top: 72px;
       margin-bottom: 24px;
     }

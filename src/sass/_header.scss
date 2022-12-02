@@ -28,7 +28,7 @@
     }
 
     @include forDesktop {
-      margin-right: 93px;
+      margin-right: 96px;
     }
   }
 
@@ -57,7 +57,7 @@
     gap: 6px;
 
     @include forTabletUp {
-      gap: 30px;
+      gap: 32px;
     }
   }
 
@@ -105,10 +105,12 @@
     line-height: 1.214;
     letter-spacing: 0.02em;
     color: $white;
-    padding: 16px 0;
-
+  }
+  &__nav-contact--padding {
     @include forTabletUp {
-      padding: 24px 0;
+      padding: 10px 8px 10px 0;
+      border: 1px solid rgba(243, 198, 83, 0.7);
+      border-radius: 2px;
     }
   }
 
@@ -117,7 +119,7 @@
 
     @include forDesktop {
       display: flex;
-      gap: 20px;
+      gap: 21px;
       margin-left: 60px;
     }
   }
@@ -129,10 +131,10 @@
     @media screen and (min-width: 414px) {
       display: flex;
     }
+  }
 
-    @include forTabletUp {
-      margin-right: 8px;
-    }
+  &__phone {
+    display: flex;
   }
 }
 
