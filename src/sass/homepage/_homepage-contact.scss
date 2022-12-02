@@ -17,6 +17,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 101px;
+    align-items: center;
   }
 
   @include forDesktop {
@@ -105,7 +106,6 @@
 
 .homepage-contact__icon {
   fill: $brown;
-  margin-right: 14px;
 }
 
 .homepage-contact__adress {
@@ -121,20 +121,13 @@
     gap: 8px;
   }
 }
-
-// .homepage-contact__item>p {
-//     width: calc(414px /2);
-//     overflow: hidden;
-//     display: inline-grid;
-// }
-
 .homepage-contact__box-phone {
   display: flex;
+  gap:8px;
   background: $white;
   border: 0.5px solid #f3c653;
   border-radius: 2px;
   padding: 12px 8px 11px 8px;
-  height: 40px;
   max-width: 264px;
 }
 
@@ -147,8 +140,9 @@
   letter-spacing: 0.01em;
   text-decoration: none;
   color: $lightblack;
-  gap: 16px;
+ 
   display: flex;
+   gap: 10px;
 }
 
 .homepage-contact__box-adress {
@@ -175,6 +169,11 @@
 .homepage-contact__link-container {
   display: flex;
   gap: 8px;
+  @media screen and (max-width: 413px) {
+    flex-direction: column;
+    
+  }
+  
 }
 
 .homepage-contact__map {
