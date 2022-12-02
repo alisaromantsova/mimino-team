@@ -1,0 +1,203 @@
+.homepage-contact__container {
+    background-color: $fonLemon ;
+    width: 100%;
+    max-width: 414px;
+    padding-top: 36px;
+
+    @include forTabletUp {
+        padding-top: 56px;
+        padding-bottom: 40px;
+        padding-left: 47px;
+        max-width: 1024px;
+        max-width: 1280px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 101px;
+
+    }
+
+    @include forDesktop {
+        padding-bottom: 74px;
+        padding-left: 85px;
+        gap: 108px;
+
+    }
+}
+
+.homepage-contact__name {
+    margin-bottom: 12px;
+
+    @include forTabletUp {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 1.08;
+        letter-spacing: 0.3em;
+    }
+}
+
+.homepage-contact__text {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+
+    @include forTabletUp {
+        margin-bottom: 52px;
+    }
+
+    @include forDesktop {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 40px;
+    }
+}
+
+.homepage-contact__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+
+    @include forTabletUp {
+        margin-bottom: 48px;
+        gap: 24px;
+    }
+
+}
+
+.homepage-contact__subtitle {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: $brown;
+    margin-right: 22px;
+
+    &--second {
+        margin-right: 54px;
+    }
+}
+
+
+
+
+.homepage-contact__link {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $lightblack;
+}
+
+.homepage-contact__text-phone {
+    margin-left: 12px;
+}
+
+.homepage-contact__icon {
+    fill: $brown;
+    margin-right: 14px;
+}
+
+.homepage-contact__adress {
+    fill: $brown;
+}
+
+.homepage-contact__item {
+    align-items: baseline;
+    display: flex;
+
+    @include forTabletUp {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+// .homepage-contact__item>p {
+//     width: calc(414px /2);
+//     overflow: hidden;
+//     display: inline-grid;
+// }
+
+.homepage-contact__box-phone {
+
+    display: flex;
+    background: $white;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+    padding: 12px 8px 11px 8px;
+    height: 40px;
+    max-width: 260px;
+}
+
+
+
+
+.homepage-contact__adress {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: $lightblack;
+    gap: 16px;
+    display: flex;
+
+}
+
+.homepage-contact__box-adress {
+    position: relative;
+    display: flex;
+    background: $white;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+    height: 76px;
+    padding: 8px 33px 7px 10px;
+    width: 100%;
+    max-width: 260px;
+    margin-left: auto;
+    gap: 14px;
+    margin-bottom: 32px;
+
+    @include forTabletUp {
+        text-align: start;
+        margin-right: auto;
+        margin-left: 0;
+    }
+}
+
+.homepage-contact__img {
+    // display: block;
+    // width: 634px;
+
+}
+
+.homepage-contact__map {
+    width: 100%;
+
+    @include forTabletUp {
+        width: 535px;
+    }
+
+    @include forDesktop {
+        width: 634px;
+    }
+
+    // border: 1px solid #BABABA;
+    // box-shadow: $bigShadow;
+    // border-radius: 2px;
+    // margin-left: auto;
+}
