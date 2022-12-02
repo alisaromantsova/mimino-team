@@ -1,4 +1,5 @@
 .footer {
+    background-color: $colorFooter;
   &__logo {
     font-family: 'Film P3', sans-serif;
     text-decoration: none;
@@ -124,5 +125,5 @@
 
 .footer .container {
   display: flex;
-  background-color: $colorFooter;
+
 }
