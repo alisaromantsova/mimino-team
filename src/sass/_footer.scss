@@ -1,5 +1,18 @@
 .footer {
-    background-color: $colorFooter;
+  background-color: $colorFooter;
+
+  @media screen and (min-width: 414px) {
+    width: 414px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1024px) {
+    min-width: 1024px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-width: 1280px;
+  }
   &__logo {
     font-family: 'Film P3', sans-serif;
     text-decoration: none;
@@ -12,11 +25,11 @@
     margin: 98px auto 99px auto;
 
     @media screen and (min-width: 414px) {
-      margin: 98px auto 99px 59px;
+      margin: 98px 60px 99px 59px;
     }
 
     @media screen and (min-width: 1024px) {
-      margin: 117px 0 117px 107px;
+      margin: 117px 0 118px 154px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -27,24 +40,27 @@
   &__link {
     text-decoration: none;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: $accentYellow;
+
+    @media screen and (min-width: 414px) {
+      font-size: 24px;
+    }
   }
 
   &__container {
-    padding: 40px 7px;
-
+    padding: 40px 0 40px 7px;
 
     @media screen and (min-width: 1024px) {
       display: flex;
-      margin-left: 155px;
+      margin-left: 170px;
       padding: 0 8px;
     }
 
     @media screen and (min-width: 1280px) {
-      margin-left: 223px;
+      margin-left: 285px;
     }
   }
 
@@ -54,26 +70,30 @@
     gap: 16px;
 
     @media screen and (min-width: 1024px) {
-      width: 300px;
       justify-content: center;
-    }
-
-    @media screen and (min-width: 1280px) {
-      width: 320px;
     }
   }
 
   &__address-list {
     margin-top: 32px;
     display: flex;
-    gap: 21px;
+    gap: 6px;
+
+    @media screen and (min-width: 414px) {
+      gap: 21px;
+    }
 
     @media screen and (min-width: 1024px) {
       flex-direction: column-reverse;
       justify-content: flex-end;
       gap: 10px;
       margin-top: 0;
+      margin-left: 85px;
       padding-left: 8px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-left: 140px;
     }
   }
 
@@ -125,5 +145,4 @@
 
 .footer .container {
   display: flex;
-
 }
