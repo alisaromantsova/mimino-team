@@ -1,127 +1,125 @@
+.homepage-contact {
+  background-color: $fonLemon;
+}
 .homepage-contact__container {
-    background-color: $fonLemon ;
-    width: 100%;
-    max-width: 414px;
-    padding-top: 36px;
+  width: 100%;
+  max-width: 414px;
+  padding-top: 36px;
+  padding-bottom: 32px;
 
-    @include forTabletUp {
-        padding-top: 56px;
-        padding-bottom: 40px;
-        padding-left: 47px;
-        max-width: 1024px;
-        max-width: 1280px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 101px;
+  @include forTabletUp {
+    padding-top: 56px;
+    padding-bottom: 40px;
+    padding-left: 47px;
+    max-width: 1024px;
 
-    }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 101px;
+  }
 
-    @include forDesktop {
-        padding-bottom: 74px;
-        padding-left: 85px;
-        gap: 108px;
-
-    }
+  @include forDesktop {
+    padding-bottom: 74px;
+    padding-left: 85px;
+    gap: 108px;
+    max-width: 1280px;
+  }
 }
 
 .homepage-contact__name {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    @include forTabletUp {
-        font-weight: 700;
-        font-size: 64px;
-        line-height: 1.08;
-        letter-spacing: 0.3em;
-    }
+  @include forTabletUp {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+  }
 }
 
 .homepage-contact__text {
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    margin-bottom: 16px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
 
-    @include forTabletUp {
-        margin-bottom: 52px;
-    }
+  @include forTabletUp {
+    margin-bottom: 52px;
+  }
 
-    @include forDesktop {
-        font-size: 20px;
-        line-height: 1.2;
-        margin-bottom: 40px;
-    }
+  @include forDesktop {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
 }
 
 .homepage-contact__list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 16px;
-    margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
 
-    @include forTabletUp {
-        margin-bottom: 48px;
-        gap: 24px;
-    }
-
+  @include forTabletUp {
+    margin-bottom: 48px;
+    gap: 24px;
+  }
 }
 
 .homepage-contact__subtitle {
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: $brown;
-    margin-right: 22px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $brown;
+  margin-right: 22px;
 
-    &--second {
-        margin-right: 54px;
-    }
+  &--second {
+    margin-right: 54px;
+  }
 }
 
-
-
-
 .homepage-contact__link {
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.21;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: $lightblack;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $lightblack;
 }
 
 .homepage-contact__text-phone {
-    margin-left: 12px;
+  margin-left: 12px;
 }
 
 .homepage-contact__icon {
-    fill: $brown;
-    margin-right: 14px;
+  fill: $brown;
+  margin-right: 14px;
 }
 
 .homepage-contact__adress {
-    fill: $brown;
+  fill: $brown;
 }
 
 .homepage-contact__item {
-    align-items: baseline;
-    display: flex;
+  align-items: baseline;
+  display: flex;
 
-    @include forTabletUp {
-        flex-direction: column;
-        gap: 8px;
-    }
+  @include forTabletUp {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
 
 // .homepage-contact__item>p {
@@ -131,73 +129,76 @@
 // }
 
 .homepage-contact__box-phone {
-
-    display: flex;
-    background: $white;
-    border: 0.5px solid #F3C653;
-    border-radius: 2px;
-    padding: 12px 8px 11px 8px;
-    height: 40px;
-    max-width: 260px;
+  display: flex;
+  background: $white;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+  padding: 12px 8px 11px 8px;
+  height: 40px;
+  max-width: 264px;
 }
 
-
-
-
 .homepage-contact__adress {
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.01em;
-    text-decoration: none;
-    color: $lightblack;
-    gap: 16px;
-    display: flex;
-
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  color: $lightblack;
+  gap: 16px;
+  display: flex;
 }
 
 .homepage-contact__box-adress {
-    position: relative;
-    display: flex;
-    background: $white;
-    border: 0.5px solid #F3C653;
-    border-radius: 2px;
-    height: 76px;
-    padding: 8px 33px 7px 10px;
-    width: 100%;
-    max-width: 260px;
-    margin-left: auto;
-    gap: 14px;
-    margin-bottom: 32px;
+  position: relative;
+  display: flex;
+  background: $white;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+  height: 76px;
+  padding: 8px 33px 7px 10px;
+  width: 100%;
+  max-width: 260px;
+  margin-left: auto;
+  gap: 14px;
+  margin-bottom: 32px;
 
-    @include forTabletUp {
-        text-align: start;
-        margin-right: auto;
-        margin-left: 0;
-    }
+  @include forTabletUp {
+    text-align: start;
+    margin-right: auto;
+    margin-left: 0;
+  }
 }
 
-.homepage-contact__img {
-    // display: block;
-    // width: 634px;
-
+.homepage-contact__link-container {
+  display: flex;
+  gap: 8px;
 }
 
 .homepage-contact__map {
-    width: 100%;
+  width: 100%;
 
-    @include forTabletUp {
-        width: 535px;
-    }
+  @include forTabletUp {
+    width: 535px;
+  }
 
-    @include forDesktop {
-        width: 634px;
-    }
-
-    // border: 1px solid #BABABA;
-    // box-shadow: $bigShadow;
-    // border-radius: 2px;
-    // margin-left: auto;
+  @include forDesktop {
+    width: 634px;
+  }
+}
+iframe {
+  max-width: 384px;
+  width: 100%;
+  height: 220px;
+  @include forTabletUp{
+     max-width: 535px;
+     width: 535px;
+  height: 412px;
+  }
+  @include forDesktop{
+     max-width: 634px;
+     width: 634px;
+  }
 }
