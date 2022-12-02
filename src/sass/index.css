@@ -1049,6 +1049,7 @@ ul {
 }
 @media (min-width: 1024px) {
   .hotel__text {
+    max-width: 439px;
     font-size: 16px;
     line-height: 1.25;
     margin-bottom: 176px;

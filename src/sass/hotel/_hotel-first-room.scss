@@ -75,6 +75,7 @@
     letter-spacing: 0.02em;
     color: $grayText;
     @include forTabletUp {
+      max-width: 439px;
       font-size: 16px;
       line-height: 1.25;
       margin-bottom: 176px;
