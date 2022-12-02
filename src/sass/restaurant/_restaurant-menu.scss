@@ -1,7 +1,6 @@
 .restaurant-menu {
     background-color: #F0ECD6;
 
-
 &__container {
     padding: 32px 15px;
     @include forTabletUp {
@@ -10,141 +9,98 @@
         @include forDesktop {
             padding: 58px 85px 60px;
         }
-}
+    }
 
-&__list {
+&__table {
+    width: 100%;
+    max-width: 384px;
+    border-collapse: collapse;
+    padding: 0;
     margin-bottom: 16px;
+    
     @include forTabletUp {
+        min-width: 420px;
         margin-bottom: 20px;
+        }    
+        @include forDesktop {
+            min-width: 485px;
+            }
+        }
+
+&__wrapper {
+    @include forTabletUp {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        gap: 90px;
+    }
+
+    @include forDesktop {
+        gap: 140px;
     }
 }
 
-&__title {
+&__title {    
     margin-bottom: 32px;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
+    font-family: 'Times New Roman';    
     font-size: 32px;
-    line-height: 37px;
-    color: #000000;
+    line-height: 1.16;    
     text-transform: uppercase;
     @include forTabletUp {
         margin-bottom: 40px;
     }
-}
-&__ggg {
-    @include forTabletUp {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;    
-    align-content: space-between;
-    height: 100%;
-    max-height: 670px;
-    @include forDesktop {
-        max-height: 720px;
     }
-}        
-}
 
-&__item {    
-    display: flex;
-    justify-content: space-between;
-    gap: 32px;
-    align-items: center;
-    margin-bottom: 8px;
-    &:last-child {
-            margin-bottom: 0;
+&__subtitle {
+    padding-bottom: 16px;    
+    text-align: left;   
+    font-family: 'Times New Roman';       
+    font-weight: 700;
+    font-size: 20px;
+    @include forTabletUp {        
+        padding-bottom: 20px;
         }
-    @include forTabletUp {
-        gap: 36px;
-        
     }
-        @include forDesktop {
-            gap: 40px;
-            margin-bottom: 12px;            
-        }
-}
 
-&__flex {width: 100vw;
-    max-width: 221px;
-    @include forDesktop {
-        max-width: 260px;}
-}
-
-&__dish {
-    margin: 0;
-    margin-bottom: 4px;
-    font-family: 'Montserrat';
-    font-style: normal;
+&__dish {    
+    width: 100vw;
+    max-width: 225px;    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.21;
-    letter-spacing: 0.02em;    
-    color: #000000;
-    @include forDesktop {
-        font-size: 16px;
-        line-height: 1.25;
-    }
-}
-
-&__subtitle {
-    margin-bottom: 16px;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    color: #000000;
-    @include forTabletUp {
-            margin-bottom: 20px;
-        }
-}
-
-&__ingredients {    
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
     letter-spacing: 0.02em;
-    color: #000000;}
+    @include forTabletUp {
+        max-width: 260px;
+        }
+    }
+
+&__ingredients {       
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    }
 
 &__weight {
-    font-family: 'Montserrat';
-    font-style: normal;
+    text-align: end;
     font-weight: 300;
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.02em;
-    color: #000000;
-    text-align: end;
-    width: 100vw;
-    max-width: 60px;
-    @include forDesktop {
-        font-size: 16px;
-        line-height: 1.25;
-        }
-}
-        
+    }
 
 &__price {
-    font-family: 'Montserrat';
-    font-style: normal;
+    text-align: end;    
+    max-width: 62px;  
     font-weight: 700;
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.02em;
-    color: #000000;
-    text-align: end;
-    width: 100vw;
-    max-width: 62px;
-    @media (max-width: 305px) {
-        max-width: 56px;
+    @include forTabletUp {
+        max-width: 70px;
     }
-
-}
-
-&__button {  
+    }
+    
+&__button {
     display: block;
     padding: 15px 24px 14px;
     font-size: 16px;
@@ -159,15 +115,38 @@
     max-width: 236px;
     margin-top: 32px;
     &:hover, &:focus {
-            background: $white;               
-            border: 2px solid $accentYellow;
+        background: $white;               
+        border: 2px solid $accentYellow;
         }
-    @include forTabletUp {
-        margin-right: 0;
-        margin-top: 20px;
-    }
-        @include forDesktop {
+        @include forTabletUp {
+            margin-right: 0;
             margin-top: 20px;
-        }
+        }           
+    }
+
+&__indent {
+    border-bottom: 8px solid transparent;
+
+    @include forDesktop {
+        border-bottom: 12px solid transparent;
+    }
+}
+
+&__indent-x {
+    border-bottom: 4px solid transparent;
+}
+
+&__indent-y {
+    @include forTabletUp {
+        border-bottom: 15px solid transparent;
+    }
+
+    @include forDesktop {
+        border-bottom: 19px solid transparent;
+    }
 }
 }
+
+
+
+
