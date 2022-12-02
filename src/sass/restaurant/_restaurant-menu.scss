@@ -1,0 +1,153 @@
+.restaurant-menu {
+    background-color: #F0ECD6;
+
+&__container {
+    padding: 32px 15px;
+    @include forTabletUp {
+        padding: 58px 47px 40px;
+    }
+        @include forDesktop {
+            padding: 58px 85px 60px;
+        }
+    }
+
+&__table {
+    width: 100%;
+    max-width: 384px;
+    border-collapse: collapse;
+    padding: 0;
+    margin-bottom: 16px;
+    
+    @include forTabletUp {
+        min-width: 420px;
+        margin-bottom: 20px;
+        }    
+        @include forDesktop {
+            min-width: 485px;
+            }
+        }
+
+&__wrapper {
+    @include forTabletUp {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        gap: 90px;
+    }
+
+    @include forDesktop {
+        gap: 140px;
+    }
+}
+
+&__title {    
+    margin-bottom: 32px;
+    font-family: 'Times New Roman';    
+    font-size: 32px;
+    line-height: 1.16;    
+    text-transform: uppercase;
+    @include forTabletUp {
+        margin-bottom: 40px;
+    }
+    }
+
+&__subtitle {
+    padding-bottom: 16px;    
+    text-align: left;   
+    font-family: 'Times New Roman';       
+    font-weight: 700;
+    font-size: 20px;
+    @include forTabletUp {        
+        padding-bottom: 20px;
+        }
+    }
+
+&__dish {    
+    width: 100vw;
+    max-width: 225px;    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    @include forTabletUp {
+        max-width: 260px;
+        }
+    }
+
+&__ingredients {       
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    }
+
+&__weight {
+    text-align: end;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    }
+
+&__price {
+    text-align: end;    
+    max-width: 62px;  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    @include forTabletUp {
+        max-width: 70px;
+    }
+    }
+    
+&__button {
+    display: block;
+    padding: 15px 24px 14px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 auto;
+    background: $black;
+    border: 2px solid $accentYellow;
+    border-radius: 25px;
+    color: $accentYellow;
+    width: 100%;
+    max-width: 236px;
+    margin-top: 32px;
+    &:hover, &:focus {
+        background: $white;               
+        border: 2px solid $accentYellow;
+        }
+        @include forTabletUp {
+            margin-right: 0;
+            margin-top: 20px;
+        }           
+    }
+
+&__indent {
+    border-bottom: 8px solid transparent;
+
+    @include forDesktop {
+        border-bottom: 12px solid transparent;
+    }
+}
+
+&__indent-x {
+    border-bottom: 4px solid transparent;
+}
+
+&__indent-y {
+    border-bottom: 8px solid transparent;
+    @include forTabletUp {
+        border-bottom: 15px solid transparent;
+    }
+
+    @include forDesktop {
+        border-bottom: 19px solid transparent;
+    }
+}
+}
+
+
+
+

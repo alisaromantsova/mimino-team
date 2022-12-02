@@ -72,55 +72,55 @@ line-height: 1.17;
 text-transform: uppercase;
 }
 &__button {
-display: block;
-padding: 20px 40px;
-font-size: 20px;
-font-weight: 500;
-font-family: inherit;
-line-height: 1.2;   
-letter-spacing: 0; 
-margin: 0 auto;
-background: $black;
-border: 1px solid $accentYellow;
-border-radius: 25px;
-color: $white;
-width: 100%;
-max-width: 384px;
-margin-bottom: 20px;
-text-transform: uppercase;
-&:hover {
-background: $accentYellow;        
-color: $black;
-}
-@include forTabletUp {
-margin-right: 0;
-max-width: 434px;
-}
+
+    display: block;
+    padding: 20px 42px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;    
+    margin: 0 auto;
+    background: $black;
+    border: 1px solid $accentYellow;
+    border-radius: 25px;
+    color: $white;
+    width: 100%;
+    max-width: 384px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    &:hover, &:focus {
+        background: $accentYellow;        
+        color: $black;
+    }
+        @include forTabletUp {
+            margin-right: 0;
+            max-width: 434px;
+        }
 }
 &__link {   
-display: flex;
-gap: 12px;
-justify-content: center;    
-font-weight: 500;    
-line-height: 1.25;
-letter-spacing: 0.02em;
-color: $brown;
-text-decoration: none;
-&:hover {
-color: $accentYellow;
-}
-@include forTabletUp {
-justify-content: flex-end;
-font-size: 20px;
-line-height: 1.2;
-gap: 16px;
-}
+    display: flex;
+    gap: 12px;
+    justify-content: center;    
+    font-weight: 500;    
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $brown;
+    text-decoration: none;
+    &:hover, &:focus {
+        color: $accentYellow;
+    }
+        @include forTabletUp {
+            justify-content: flex-end;
+            font-size: 20px;
+            line-height: 1.2;
+            gap: 16px;
+        }
 }
 &__icon {
-fill: $brown;
-.room-amenities__link:hover & {
-fill: $accentYellow;
-}
+    fill: $brown;
+    .room-amenities__link:hover & {
+        fill: $accentYellow;
+    }
+        .room-amenities__link:focus & {
+            fill: $accentYellow;
+        }
 
-}
-}
