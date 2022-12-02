@@ -14,63 +14,125 @@
       <div class="details-restaurant__wrapper">
         <ul class="details-restaurant__pics">
           <li class="details-restaurant__first-pics">
-            <picture>
-              <source
-                srcset="
-                  ./images/homepage-images/details-restaurant/details-restaurant1_mobile.jpg    1x,
-                  ./images/homepage-images/details-restaurant/details-restaurant1_mobile@2x.jpg 2x
-                "
-                media="(max-width: 1023px)"
-              />
-              <source
-                srcset="
-                  ./images/homepage-images/details-restaurant/details-restaurant1_desktop.jpg    1x,
-                  ./images/homepage-images/details-restaurant/details-restaurant1_desktop@2x.jpg 2x
-                "
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcset="
-                  ./images/homepage-images/details-restaurant/details-restaurant1_tablet.jpg    1x,
-                  ./images/homepage-images/details-restaurant/details-restaurant1_tablet@2x.jpg 2x
-                "
-                media="(min-width: 1024px)"
-              />
+            <ul class="one-time">
+              <!-- <button
+                type="button"
+                class="my-slick-prev slick-arrow"
+                style="display: flex"
+              >
+                ⟵
+              </button> -->
+              <button
+        type="button"
+        class="my-slick-prev slick-arrow slick-arrow--white"
+        style="display: flex"
+      >
+       <svg>
+        <use href="./images/icons.svg#icon-arrow-right"></use>
+      </svg>
+      </button>
+                <li>
+                   <div>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/homepage-images/details-restaurant/details-restaurant1_mobile.jpg    1x,
+                        ./images/homepage-images/details-restaurant/details-restaurant1_mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 1023px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/homepage-images/details-restaurant/details-restaurant1_desktop.jpg    1x,
+                        ./images/homepage-images/details-restaurant/details-restaurant1_desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/homepage-images/details-restaurant/details-restaurant1_tablet.jpg    1x,
+                        ./images/homepage-images/details-restaurant/details-restaurant1_tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1024px)"
+                    />
 
-              <img
-                src="./images/homepage-images/details-restaurant/details-restaurant1_mobile.jpg"
-                alt="Meat"
-              />
-            </picture>
+                    <img
+                      src="./images/homepage-images/details-restaurant/details-restaurant1_mobile.jpg"
+                      alt="Meat"
+                    />
+                  </picture>
+                  </div>
+                </li>
+             
+              
+                <li>
+                  <div>
+                  <picture>
+                     <picture>
+                    <source
+                      srcset="
+                        ./images/slick/mobile/slick7-mobile@1x.jpg 1x,
+                        ./images/slick/mobile/slick7-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 1023px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slick/desktop/slick7-desktop@1x.jpg 1x,
+                        ./images/slick/desktop/slick7-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slick/tablet/slick7-tablet@1x.jpg 1x,
+                        ./images/slick/tablet/slick7-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1024px)"
+                    />
 
-            <picture>
-              <source
-                srcset="
-                  ./images/slick/mobile/slick6-mobile@1x.jpg 1x,
-                  ./images/slick/mobile/slick6-mobile@2x.jpg 2x
-                "
-                media="(max-width: 1023px)"
-              />
-              <source
-                srcset="
-                  ./images/slick/desktop/slick6-desktop@1x.jpg 1x,
-                  ./images/slick/desktop/slick6-desktop@2x.jpg 2x
-                "
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcset="
-                  ./images/slick/tablet/slick6-tablet@1x.jpg 1x,
-                  ./images/slick/tablet/slick6-tablet@2x.jpg 2x
-                "
-                media="(min-width: 1024px)"
-              />
+                    <img
+                      src="./images/slick/mobile/slick7-mobile@1x.jpg"
+                      alt="Coffee"
+                       class="details-restaurant__first-pics"
+                    />
+                  </picture>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/slick/mobile/slick6-mobile@1x.jpg 1x,
+                        ./images/slick/mobile/slick6-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 1023px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slick/desktop/slick6-desktop@1x.jpg 1x,
+                        ./images/slick/desktop/slick6-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slick/tablet/slick6-tablet@1x.jpg 1x,
+                        ./images/slick/tablet/slick6-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1024px)"
+                    />
 
-              <img
-                src="./images/slick/mobile/slick6-mobile@1x.jpg"
-                alt="Coffee"
-              />
-            </picture>
+                    <img
+                      src="./images/slick/mobile/slick6-mobile@1x.jpg"
+                      alt="Coffee"
+                       class="details-restaurant__first-pics"
+                    />
+                  </picture>
+                  </div>
+                </li>
+            </ul>
           </li>
           <li class="details-restaurant__second-pics">
             <picture>
@@ -130,12 +192,12 @@
           >
             Забронювати столик
           </button>
-          <button
-            type="button"
+          <a
+            href="./restaurant.html#menu"
             class="button details-restaurant__second-button"
           >
             Переглянути меню
-          </button>
+          </a>
         </div>
       </div>
     </div>
