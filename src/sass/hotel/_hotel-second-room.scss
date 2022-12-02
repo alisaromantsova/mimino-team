@@ -1,0 +1,76 @@
+.hotel {
+  &--second {
+    background-color: $fonDarkLemon;
+  }
+  &__top-box--second {
+    @include forTabletUp {
+      flex-direction: row-reverse;
+      gap: 45px;
+    }
+    @include forDesktop {
+    //   gap: 48px;
+    }
+  }
+  &__info-box {
+  }
+
+  &__sub-box--second {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @include forTabletUp {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+
+  &__disc-box--second {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @include forTabletUp {
+      align-items: flex-start;
+    }
+  }
+
+  &__text--second {
+    margin-right: 79px;
+    @include forTabletUp {
+      margin-right: 0;
+      margin-bottom: 169px;
+      @include forDesktop{
+        margin-bottom: 188px;
+      }
+    }
+  }
+
+  &__main-room-img--second {
+    margin-left: 0;
+    margin-right: auto;
+    @include forTabletUp {
+    //   margin-left: 48px;
+      margin-top: -96px;
+    }
+  }
+
+  &__bottom-box--second {
+    @include forTabletUp {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__slider--second {
+    flex-direction: row-reverse;
+    margin-left: 0;
+    margin-right: -16px;
+    @include forTabletUp {
+      margin-right: 0;
+    }
+  }
+}
+
+.brand-name--second {
+  @include forTabletUp {
+    margin-right: -20px;
+  }
+}

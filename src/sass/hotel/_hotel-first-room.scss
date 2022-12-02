@@ -4,7 +4,7 @@
   .container {
     padding-top: 32px;
     padding-bottom: 32px;
-  @include forTabletUp {
+    @include forTabletUp {
       position: relative;
       padding-top: 64px;
       padding-bottom: 104px;
@@ -14,6 +14,20 @@
       padding-bottom: 112px;
     }
   }
+  &__top-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 32px;
+    @include forTabletUp {
+      flex-direction: row;
+      gap: 26px;
+      margin-bottom: 0px;
+    }
+    @include forDesktop {
+      gap: 46px;
+    }
+  }
 
   &__sub-title {
     font-family: 'Times New Roman';
@@ -21,7 +35,7 @@
     line-height: 1.15;
     color: $lightGrayText;
     margin-bottom: 8px;
-  @include forTabletUp {
+    @include forTabletUp {
       font-size: 32px;
       line-height: 1.156;
       margin-bottom: 4px;
@@ -36,13 +50,15 @@
     letter-spacing: 0.05em;
     margin-top: 32px;
     margin-bottom: 12px;
-  @include forTabletUp {
+    @include forTabletUp {
+      width: 439px;
       font-size: 30px;
       line-height: 1.13;
       margin-top: 64px;
       margin-bottom: 16px;
     }
     @include forDesktop {
+      width: 509px;
       font-size: 36px;
       line-height: 1.139;
       margin-top: 72px;
@@ -58,8 +74,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $grayText;
-  @include forTabletUp {
-      max-width: 439px;
+    @include forTabletUp {
       font-size: 16px;
       line-height: 1.25;
       margin-bottom: 176px;
@@ -71,42 +86,34 @@
   }
 
   &__main-room-img {
-    margin: 32px 0 32px auto;
+    margin-left: auto;
     box-shadow: $littleShadow;
-  @include forTabletUp {
-      position: absolute;
-      margin: 0;
-      top: -32;
-      right: 112;
+    @include forTabletUp {
+      margin-top: -96px;
     }
     @include forDesktop {
-      position: absolute;
-      top: -33;
-      right: 180;
+      margin-top: -104px;
     }
   }
 
-  &__box {
+  &__bottom-box {
     display: flex;
     flex-direction: column;
     gap: 72px;
-  @include forTabletUp {
+    @include forTabletUp {
       flex-direction: row;
       align-items: center;
-      gap: 266px;
-    }
-    @include forDesktop {
-      gap: 326px;
+      justify-content: space-between;
+      // gap: 266px;
     }
   }
 
   &__slider {
     margin-left: -16px;
-    // margin-bottom: 72px;
     display: flex;
     flex-direction: row;
     gap: 16px;
-  @include forTabletUp {
+    @include forTabletUp {
       margin-left: 0;
       gap: 40px;
     }
