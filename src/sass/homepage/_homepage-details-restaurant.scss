@@ -64,136 +64,136 @@
     }
   }
 }
-.details-restaurant .container{
+.details-restaurant .container {
   padding-top: 24px;
   padding-bottom: 40px;
-  @include forTabletUp{
+  @include forTabletUp {
     padding-top: 48px;
-    padding-bottom: 40px;
+    padding-bottom: 96px;
   }
-
 }
-.details-restaurant__name{
-color: $white;
-margin-bottom: 12px;
+.details-restaurant__name {
+  color: $white;
+  margin-bottom: 12px;
 
-@include forTabletUp{
-  margin-bottom: 16px;
-}
-
+  @include forTabletUp {
+    margin-bottom: 16px;
+  }
 }
 
-.details-restaurant__title{
-    margin-bottom: 20px;
-    font-weight: 700;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: $white;
-@include forTabletUp{
- font-size: 24px;
-line-height: 1.2;
-margin-bottom: 8px;
+.details-restaurant__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $white;
+  @include forTabletUp {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
 }
-}
-.details-restaurant__text{
-    font-weight: 600;
-font-size: 12px;
-line-height: 1.25;
-letter-spacing: 0.02em;
-color: #BABABA;
-@include forTabletUp{
+.details-restaurant__text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #bababa;
+  @include forTabletUp {
     font-size: 16px;
-line-height: 1.25;
+    line-height: 1.25;
+  }
 }
+.details-restaurant__container {
+  width: 67%;
+  max-width: 259px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  @include forTabletUp {
+    width: 610px;
+    max-width: 610px;
+    margin-bottom: 40px;
+    margin-left: 231px;
+  }
+  @include forDesktop {
+    margin-left: 253px;
+  }
 }
-.details-restaurant__container{
-width: 67%;
-max-width: 259px;
-margin-bottom: 48px;
-margin-left: auto;
-@include forTabletUp{
-  width: 610px;
-  max-width: 610px;
-  margin-bottom: 40px;
-  margin-left: 231px;
+.details-restaurant__pics {
+  display: flex;
+  margin-bottom: 80px;
+  gap: 20px;
+  justify-content: flex-end;
+  @include forTabletUp {
+    margin-bottom: 0;
+    margin-left: 0;
+    gap: 34px;
+  }
+  @include forDesktop {
+    gap: 86px;
+  }
 }
-@include forDesktop{
-  margin-left: 253px;
+.details-restaurant__first-pics {
+  width: 274px;
+  @include forTabletUp {
+    width: 270px;
+  }
 }
-
-}
-.details-restaurant__pics{
-    display: flex;
-    margin-bottom: 80px;
-    gap: 20px;
- justify-content: flex-end;
-    @include forTabletUp{
-      margin-bottom: 0;
-      margin-left: 0;
-      gap: 34px;
-    }
-    @include forDesktop{
-      gap: 86px;
-    }
-}
-.details-restaurant__first-pics{
-width: 274px;
-@include forTabletUp{
-  width: 270px;
-}
-}
-.details-restaurant__second-pics{
+.details-restaurant__second-pics {
   width: 80px;
-   @include forTabletUp{
+  @include forTabletUp {
     width: 162px;
-   }
+  }
 }
-.details-restaurant__third-pics{
-display: none;
-@include forTabletUp{
-  display: block;
-  width: 162px;
-}
-  @include forDesktop{
+.details-restaurant__third-pics {
+  display: none;
+  @include forTabletUp {
+    display: block;
+    width: 162px;
+  }
+  @include forDesktop {
     width: 270px;
     margin-right: -33px;
   }
 }
 
-.details-restaurant__first-button{
-    background: rgba(0, 0, 0, 0.4);
-    padding: 14px 22px;
-    margin: 0 auto 16px;
-    font-family: inherit;
-    &:hover, 
-    &:focus{
+.details-restaurant__first-button {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 14px 22px;
+  margin: 0 auto 16px;
+  font-family: inherit;
+  &:hover,
+  &:focus {
     border: 2px solid $white;
-    }
+  }
 }
-.details-restaurant__second-button{
-    padding: 14px 26px;
-    background: rgba(0, 0, 0, 0.4);
-    margin: 0 auto;
-    &:hover, 
-    &:focus{
+.details-restaurant__second-button {
+  padding: 14px 26px;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+  display: block;
+  text-decoration: none;
+  width: 236px;
+  &:hover,
+  &:focus {
     border: 2px solid $white;
-    }
+  }
 }
-.details-restaurant__wrapper{
-   margin-left: -15px;
+.details-restaurant__wrapper {
+  margin-left: -15px;
   margin-right: -15px;
-  @include forTabletUp{
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 29px;
-  margin-left: 0;
-  margin-right: 0;
+  @include forTabletUp {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 29px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @include forDesktop {
+    gap: 32px;
+  }
 }
-@include forDesktop{
-  gap: 32px;
-}
-}
-.details-restaurant__buttons{
-align-self: flex-end;
+.details-restaurant__buttons {
+  align-self: flex-end;
 }

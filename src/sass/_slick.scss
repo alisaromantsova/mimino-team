@@ -1,0 +1,41 @@
+.my-slick-prev,
+.my-slick-next {
+  position: absolute;
+  bottom: -60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1;
+  border: none;
+  color: $white;
+  background-color: transparent;
+}
+
+.my-slick-prev {
+  left: 0;
+  //   @media screen and (min-width: 768px) {
+  //     left: -50px;
+  //   }
+  //   @media screen and (min-width: 1360px) {
+  //     left: -100px;
+  //   }
+}
+.my-slick-next {
+  right: 160px;
+  //   @media screen and (min-width: 768px) {
+  //     right: -50px;
+  //   }
+  //   @media screen and (min-width: 1360px) {
+  //     right: -100px;
+  //   }
+}
+.slick-arrow--white {
+  color: $white;
+}
