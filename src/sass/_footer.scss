@@ -1,150 +1,124 @@
 .footer {
-  background-color: $colorFooter;
-
   &__logo {
-    font-family: 'Film P3', sans-serif;
+    display: block;
+    font-family: 'Film P3';
     text-decoration: none;
-    font-weight: 700;
     font-size: 40px;
     line-height: 1.075;
     letter-spacing: 0.3em;
     color: $accentYellow;
+    padding: 98px 0 99px 20px;
     text-transform: uppercase;
-    margin: 98px auto 99px auto;
-    transition: color 250ms linear;
-    &:hover,
-    &:focus {
-      color: $brown;
-    }
+
     @media screen and (min-width: 414px) {
-      margin: 98px 60px 99px 59px;
+      padding: 98px 0 99px 44px;
     }
 
-    @media screen and (min-width: 1024px) {
-      margin: 117px 0 118px 154px;
+    @include forTabletUp {
+      padding: 117px 0 118px 107px;
+      font-size: 64px;
+      line-height: 1.078;
     }
 
-    @media screen and (min-width: 1280px) {
-      margin: 117px 0 117px 131px;
-    }
-  }
-
-  &__link {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: $accentYellow;
-    transition: color 250ms linear;
-    &:hover,
-    &:focus {
-      color: $brown;
-    }
-    @media screen and (min-width: 414px) {
-      font-size: 24px;
-    }
-  }
-
-  &__container {
-    padding: 40px 0 40px 7px;
-
-    @media screen and (min-width: 1024px) {
-      display: flex;
-      margin-left: 170px;
-      padding: 0 8px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      margin-left: 285px;
+    @include forDesktop {
+      padding: 120px 0 115px 131px;
     }
   }
 
   &__list {
+    position: absolute;
+    top: 40px;
+    right: 21px;
     display: flex;
     flex-direction: column;
     gap: 16px;
 
-    @media screen and (min-width: 1024px) {
-      justify-content: center;
+    @media screen and (min-width: 414px) {
+      right: 41px;
+    }
+
+    @include forTabletUp {
+      top: 80px;
+      right: 403px;
+    }
+
+    @include forDesktop {
+      right: 529px;
     }
   }
 
-  &__address-list {
-    margin-top: 32px;
+  &__list-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: $accentYellow;
+  }
+
+  &__social-list {
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
     display: flex;
-    gap: 6px;
+    gap: 10px;
 
     @media screen and (min-width: 414px) {
       gap: 21px;
     }
 
-    @media screen and (min-width: 1024px) {
-      flex-direction: column-reverse;
-      justify-content: flex-end;
-      gap: 10px;
-      margin-top: 0;
-      margin-left: 85px;
-      padding-left: 8px;
+    @include forTabletUp {
+      flex-direction: column;
+      gap: 12px;
+      right: 122px;
+      top: 80px;
+      bottom: 0;
     }
 
-    @media screen and (min-width: 1280px) {
-      margin-left: 140px;
-    }
-  }
-
-  &__address-item {
-    @media screen and (min-width: 1024px) {
-      width: 144px;
-      height: 40px;
+    @include forDesktop {
+      right: 187px;
     }
   }
 
-  &__address-item--margin {
-    @media screen and (min-width: 1024px) {
-      margin-top: 80px;
-    }
-  }
-
-  &__address-link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  &__social-link {
     text-decoration: none;
-    width: 100%;
-    height: 100%;
-    color: $accentYellow;
-    transition: color 250ms linear, border 250ms linear;
 
-    @media screen and (min-width: 1024px) {
-      padding: 10px 15px 10px 12px;
-      border: 0.5px solid #f3c653;
+    @include forTabletUp {
+      display: flex;
+      width: 143px;
+      justify-content: space-between;
+      border: 0.5px solid $accentYellow;
       border-radius: 2px;
-    }
-    &:hover,
-    &:focus {
-      border: 0.5px solid $brown;
-      color: $brown;
+      padding: 10px 15px 10px 10px;
     }
   }
 
-  &__address-text {
+  &__social-text {
     display: none;
 
-    font-family: 'Montserrat';
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-
-    @media screen and (min-width: 1024px) {
+    @include forTabletUp {
       display: block;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+      color: $accentYellow;
     }
   }
 
-  &__icon {
-    fill: currentColor;
+  &__social-icon {
+    fill: rgba(243, 198, 83, 0.7);
+  }
+
+  @include forTabletUp {
+    fill: $accentYellow;
+  }
+
+  @include forDesktop {
+    fill: rgba(243, 198, 83, 0.7);
   }
 }
 
 .footer .container {
-  display: flex;
+  background-color: $colorFooter;
+  position: relative;
 }
