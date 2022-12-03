@@ -77,9 +77,11 @@
 .details-hotel__name{
 color: $white;
 margin-bottom: 12px;
+margin-right: -12px;
 align-self: flex-end;
 
 @include forTabletUp{
+  margin-right: -20px;
   margin-bottom: 16px;
 }
 
