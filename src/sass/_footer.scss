@@ -1,5 +1,22 @@
 .footer {
   background-color: $colorFooter;
+
+  &__container {
+    padding: 98px 0 99px 20px;
+
+    @media screen and (min-width: 414px) {
+      padding: 98px 0 99px 44px;
+    }
+
+    @include forTabletUp {
+      padding: 117px 0 118px 107px;
+    }
+
+    @include forDesktop {
+      padding: 120px 0 115px 131px;
+    }
+  }
+
   &__logo {
     display: block;
     font-family: 'Film P3';
@@ -8,21 +25,13 @@
     line-height: 1.075;
     letter-spacing: 0.3em;
     color: $accentYellow;
-    padding: 98px 0 99px 20px;
+    width: 127px;
     text-transform: uppercase;
 
-    @media screen and (min-width: 414px) {
-      padding: 98px 0 99px 44px;
-    }
-
     @include forTabletUp {
-      padding: 117px 0 118px 107px;
       font-size: 64px;
       line-height: 1.078;
-    }
-
-    @include forDesktop {
-      padding: 120px 0 115px 131px;
+      width: 202px;
     }
   }
 
