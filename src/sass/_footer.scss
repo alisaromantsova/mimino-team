@@ -1,4 +1,5 @@
 .footer {
+  background-color: $colorFooter;
   &__logo {
     display: block;
     font-family: 'Film P3';
@@ -119,6 +120,5 @@
 }
 
 .footer .container {
-  background-color: $colorFooter;
   position: relative;
 }
