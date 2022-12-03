@@ -1,2 +1,0 @@
-!function(){var e={openModalBtn:document.querySelector("[data-modal-price-open]"),closeModalBtn:document.querySelector("[data-modal-price-close]"),modal:document.querySelector("[data-modal-price]")};function o(){e.modal.classList.toggle("is-hidden"),document.body.classList.toggle("modal-open")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)}();
-//# sourceMappingURL=room.46673d41.js.map
