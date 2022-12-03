@@ -144,6 +144,7 @@
     transition: background 250ms linear, border 250ms linear;
     padding: 14px 24px;
     background: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 
     @media screen and (min-width: 1024px) {
       padding: 14px 26px;
