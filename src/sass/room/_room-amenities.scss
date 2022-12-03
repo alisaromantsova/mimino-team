@@ -1,18 +1,14 @@
-.room-amenities {    
-background-color: $fonLemon; 
-padding-top: 32px;
-padding-bottom: 32px;
-@include forTabletUp {
-padding-top: 48px;
-padding-bottom: 40px;
-@include forDesktop {
-padding-bottom: 48px; 
-}
-}
-&__container{
+.room-amenities {
+  background-color: $fonLemon;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include forTabletUp {
+    padding-top: 48px;
+    padding-bottom: 40px;
     @include forDesktop {
-        padding-right: 198px;
+      padding-bottom: 48px;
     }
+
 }
 &__title {
 font-family: 'Times New Roman';    
@@ -72,11 +68,12 @@ text-transform: uppercase;
 }
 &__button {
 
+
     display: block;
     padding: 20px 42px;
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.2;    
+    line-height: 1.2;
     margin: 0 auto;
     background: $black;
     border: 1px solid $accentYellow;
@@ -86,6 +83,7 @@ text-transform: uppercase;
     max-width: 384px;
     margin-bottom: 20px;
     text-transform: uppercase;
+
     cursor: pointer;
     transition: background 250ms linear, color 250ms linear;
     &:hover, &:focus {
@@ -99,34 +97,36 @@ text-transform: uppercase;
         }
 }
 &__link {   
+
     display: flex;
     gap: 12px;
-    justify-content: center;    
-    font-weight: 500;    
+    justify-content: center;
+    font-weight: 500;
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $brown;
     text-decoration: none;
+
     transition: color 250ms linear;
     &:hover, &:focus {
         color: $accentYellow;
+
     }
-        @include forTabletUp {
-            justify-content: flex-end;
-            font-size: 20px;
-            line-height: 1.2;
-            gap: 16px;
-        }
-}
-&__icon {
+    @include forTabletUp {
+      justify-content: flex-end;
+      font-size: 20px;
+      line-height: 1.2;
+      gap: 16px;
+    }
+  }
+  &__icon {
     fill: $brown;
     transition: fill 250ms linear;
     .room-amenities__link:hover & {
-        fill: $accentYellow;
+      fill: $accentYellow;
     }
-        .room-amenities__link:focus & {
-            fill: $accentYellow;
-        }
-
+    .room-amenities__link:focus & {
+      fill: $accentYellow;
     }
+  }
 }

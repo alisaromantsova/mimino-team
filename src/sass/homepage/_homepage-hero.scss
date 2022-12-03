@@ -127,16 +127,7 @@
   }
 
   &__button-hero {
-    display: block;
     margin: 0 auto;
-    border-radius: 25px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: $accentYellow;
-    border: 2px solid #ffffff;
-    transition: background 250ms linear, border 250ms linear;
     padding: 14px 24px;
     background: rgba(0, 0, 0, 0.4);
     cursor: pointer;
@@ -144,12 +135,6 @@
     @media screen and (min-width: 1024px) {
       padding: 14px 26px;
       margin: 0 0 0 0;
-    }
-
-    &:hover,
-    &:focus {
-      background: $white;
-      border: 2px solid #f3c653;
     }
   }
 
@@ -194,7 +179,12 @@
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
     padding: 8px 8px;
-
+    transition: border 250ms linear, color 250ms linear;
+  &:hover,
+    &:focus {
+      border: 1px solid $brown;
+      color: $brown;
+    }
     @media screen and (min-width: 1024px) {
       left: 47px;
       bottom: 64px;
@@ -209,6 +199,8 @@
       right: auto;
       top: auto;
     }
+
+ 
   }
 
   &__address-text {
