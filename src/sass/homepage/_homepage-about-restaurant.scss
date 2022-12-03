@@ -9,11 +9,12 @@
 
   @include forTabletUp {
     padding-top: 129px;
-    padding-bottom: 32px;
+    padding-bottom: 72px;
   }
 
   @include forDesktop {
     padding-top: 120px;
+    padding-bottom: 104px;
   }
 }
 
