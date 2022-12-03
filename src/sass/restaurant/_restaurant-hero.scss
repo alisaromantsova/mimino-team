@@ -47,20 +47,17 @@
   &__title {
     text-transform: uppercase;
     font-family: 'Film P3', sans-serif;
-    text-align: center;
-    font-size: 90px;
+    font-size: 96px;
     line-height: 1.0729;
     letter-spacing: 0.3em;
     color: $white;
-
-    @media screen and (min-width: 414px) {
-        font-size: 96px;
-        margin-right: -35px;
-    }
+    margin: 0 auto;
+    max-width: 303px;
 
     @media screen and (min-width: 1024px) {
         font-size: 128px;
         line-height: 1.0781;
+        max-width: 404px;
     }
   }
 

@@ -108,12 +108,13 @@
     line-height: 1.25;
     margin: 0 auto;
     background: $black;
-    border: 2px solid $accentYellow;
+    border: 2px solid $white;
     border-radius: 25px;
     color: $accentYellow;
     width: 100%;
     max-width: 236px;
     margin-top: 32px;
+    transition: background 250ms linear, border 250ms linear;
     &:hover, &:focus {
         background: $white;               
         border: 2px solid $accentYellow;
