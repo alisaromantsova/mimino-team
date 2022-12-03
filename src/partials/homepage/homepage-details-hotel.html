@@ -13,34 +13,149 @@
       <div class="details-hotel__wrapper">
         <ul class="details-hotel__pics">
           <li class="details-hotel__first-pics">
-            <picture>
-              <source
-                srcset="
-                  ./images/homepage-images/details-hotel/details-hotel1_mobile.jpg    1x,
-                  ./images/homepage-images/details-hotel/details-hotel1_mobile@2x.jpg 2x
-                "
-                media="(max-width: 1023px)"
-              />
-              <source
-                srcset="
-                  ./images/homepage-images/details-hotel/details-hotel1_desktop.jpg    1x,
-                  ./images/homepage-images/details-hotel/details-hotel1_desktop@2x.jpg 2x
-                "
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcset="
-                  ./images/homepage-images/details-hotel/details-hotel1_tablet.jpg    1x,
-                  ./images/homepage-images/details-hotel/details-hotel1_tablet@2x.jpg 2x
-                "
-                media="(min-width: 1024px)"
-              />
+            <ul class="one-time">
+              <button
+                type="button"
+                class="my-slick-prev slick-arrow slick-arrow--white"
+                style="display: flex"
+              >
+                <svg>
+                  <use href="./images/icons.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+              <li class="details-hotel__first-pics">
+                <div>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/homepage-images/details-hotel/details-hotel1_mobile.jpg    1x,
+                        ./images/homepage-images/details-hotel/details-hotel1_mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 1023px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/homepage-images/details-hotel/details-hotel1_desktop.jpg    1x,
+                        ./images/homepage-images/details-hotel/details-hotel1_desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/homepage-images/details-hotel/details-hotel1_tablet.jpg    1x,
+                        ./images/homepage-images/details-hotel/details-hotel1_tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1024px)"
+                    />
 
-              <img
-                src="./images/homepage-images/details-hotel/details-hotel1_mobile.jpg"
-                alt="Meat"
-              />
-            </picture>
+                    <img
+                      src="./images/homepage-images/details-hotel/details-hotel1_mobile.jpg"
+                      alt="Meat"
+                    />
+                  </picture>
+                </div>
+              </li>
+
+              <li class="details-hotel__first-pics">
+                <div>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/slick/mobile/slick1-mobile@1x.jpg 1x,
+                        ./images/slick/mobile/slick1-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 1023px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slick/desktop/slick1-desktop@1x.jpg 1x,
+                        ./images/slick/desktop/slick1-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slick/tablet/slick1-tablet@1x.jpg 1x,
+                        ./images/slick/tablet/slick1-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1024px)"
+                    />
+
+                    <img
+                      src="./images/slick/mobile/slick1-mobile@1x.jpg"
+                      alt="Coffee"
+                      class="details-restaurant__first-pics"
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li class="details-hotel__first-pics">
+                <div>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/slick/mobile/slick2-mobile@1x.jpg 1x,
+                        ./images/slick/mobile/slick2-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 1023px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slick/desktop/slick2-desktop@1x.jpg 1x,
+                        ./images/slick/desktop/slick2-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slick/tablet/slick2-tablet@1x.jpg 1x,
+                        ./images/slick/tablet/slick2-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1024px)"
+                    />
+
+                    <img
+                      src="./images/slick/mobile/slick2-mobile@1x.jpg"
+                      alt="Coffee"
+                      class="details-restaurant__first-pics"
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li class="details-hotel__first-pics">
+                <div>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/slick/mobile/slick1-mobile@1x.jpg 1x,
+                        ./images/slick/mobile/slick1-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 1023px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slick/desktop/slick1-desktop@1x.jpg 1x,
+                        ./images/slick/desktop/slick1-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slick/tablet/slick1-tablet@1x.jpg 1x,
+                        ./images/slick/tablet/slick1-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1024px)"
+                    />
+
+                    <img
+                      src="./images/slick/mobile/slick1-mobile@1x.jpg"
+                      alt="Coffee"
+                      class="details-restaurant__first-pics"
+                    />
+                  </picture>
+                </div>
+              </li>
+            </ul>
           </li>
           <li class="details-hotel__second-pics">
             <picture>
@@ -100,13 +215,19 @@
           >
             Забронювати номер
           </button>
-          <button
+          <a
+            href="./hotel.html"
+            class="button details-restaurant__second-button"
+          >
+            Переглянути ціни
+          </a>
+          <!-- <button
             type="button"
             class="button details-hotel__second-button"
             data-modal-price-open-1
           >
             Переглянути ціни
-          </button>
+          </button> -->
         </div>
       </div>
     </div>

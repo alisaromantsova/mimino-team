@@ -15,7 +15,11 @@
     padding: 16px 0;
     margin-left: 0;
     margin-right: auto;
-
+    transition: color 250ms linear;
+    &:hover,
+    &:focus {
+      color: $brown;
+    }
     @media screen and (min-width: 414px) {
       margin-right: 52px;
     }
@@ -88,7 +92,11 @@
     color: $accentYellow;
     display: block;
     padding: 16px 0;
-
+    transition: color 250ms linear;
+    &:hover,
+    &:focus {
+      color: $brown;
+    }
     @include forTabletUp {
       padding: 24px 0;
       font-size: 20px;
@@ -105,6 +113,11 @@
     line-height: 1.214;
     letter-spacing: 0.02em;
     color: $white;
+    transition: color 250ms linear;
+    &:hover,
+    &:focus {
+      color: $brown;
+    }
   }
   &__nav-contact--padding {
     @include forTabletUp {
@@ -126,7 +139,7 @@
 
   &__icon {
     display: none;
-    fill: $accentYellow;
+    fill: currentColor;
 
     @media screen and (min-width: 414px) {
       display: flex;
@@ -135,6 +148,14 @@
 
   &__phone {
     display: flex;
+  }
+  &__social-icon {
+    color: $accentYellow;
+    transition: color 250ms linear;
+    &:hover,
+    &:focus {
+      color: $brown;
+    }
   }
 }
 

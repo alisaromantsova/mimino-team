@@ -7,9 +7,7 @@
       flex-direction: row-reverse;
       gap: 45px;
     }
-
   }
-  
 
   &__sub-box--second {
     display: flex;
@@ -35,7 +33,7 @@
     @include forTabletUp {
       margin-right: 0;
       margin-bottom: 169px;
-      @include forDesktop{
+      @include forDesktop {
         margin-bottom: 188px;
       }
     }
