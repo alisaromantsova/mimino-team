@@ -53,7 +53,7 @@
 
   &__title {
     text-transform: uppercase;
-    font-family: 'Film P3', sans-serif;   
+    font-family: 'Film P3', sans-serif;
     font-size: 96px;
     line-height: 1.0729;
     letter-spacing: 0.3em;
@@ -63,11 +63,10 @@
     max-width: 303px;
 
     @media screen and (min-width: 1024px) {
-        font-size: 128px;
-        max-width: 404px;
-        line-height: 1.0781;
-    }    
-
+      font-size: 128px;
+      max-width: 404px;
+      line-height: 1.0781;
+    }
   }
 
   &__text {
@@ -132,6 +131,11 @@
 
   &__icon {
     fill: $accentYellow;
+    transition: fill 250ms linear;
+    &:hover,
+    &:focus {
+      fill: $brown;
+    }
   }
 
   &__address-link {
@@ -151,8 +155,8 @@
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
     padding: 8px 8px;
-     transition: border 250ms linear, color 250ms linear;
-  &:hover,
+    transition: border 250ms linear, color 250ms linear;
+    &:hover,
     &:focus {
       border: 1px solid $brown;
       color: $brown;

@@ -61,6 +61,9 @@
     max-width: 303px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (max-width: 413px){
+      font-size: 80px;
+    }
     @media screen and (min-width: 1024px) {
       font-size: 128px;
       line-height: 1.0781;
@@ -160,8 +163,12 @@
 
   &__icon {
     fill: $accentYellow;
+     transition:  fill 250ms linear;
+  &:hover,
+    &:focus {
+      fill: $brown;
   }
-
+  }
   &__address-link {
     position: absolute;
     top: 72px;
