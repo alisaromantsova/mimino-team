@@ -1,7 +1,7 @@
 .my-slick-prev,
 .my-slick-next {
   position: absolute;
-  bottom: -60px;
+  bottom: -40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,6 +16,14 @@
   border: none;
   color: $white;
   background-color: transparent;
+  @include forTabletUp {
+    bottom: -50px;
+  }
+  transition: color 250ms linear;
+  &:hover,
+  &:focus {
+    color: $brown;
+  }
 }
 
 .my-slick-prev {

@@ -25,7 +25,6 @@
   }
 
   @include forTabletUp {
-    
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
@@ -65,145 +64,141 @@
     }
   }
 }
-.details-hotel .container{
+.details-hotel .container {
   padding-top: 24px;
   padding-bottom: 40px;
-  @include forTabletUp{
+  @include forTabletUp {
     padding-top: 48px;
-    padding-bottom: 40px;
+    padding-bottom: 96px;
   }
-
 }
-.details-hotel__name{
-color: $white;
-margin-bottom: 12px;
-margin-right: -12px;
-align-self: flex-end;
+.details-hotel__name {
+  color: $white;
+  margin-bottom: 12px;
+  margin-right: -12px;
+  align-self: flex-end;
 
-@include forTabletUp{
-  margin-right: -20px;
-  margin-bottom: 16px;
-}
-
+  @include forTabletUp {
+    margin-right: -20px;
+    margin-bottom: 16px;
+  }
 }
 
-.details-hotel__title{
-    margin-bottom: 20px;
-    align-self: flex-end;
-    font-weight: 700;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: $white;
-@include forTabletUp{
- font-size: 24px;
-line-height: 1.2;
-margin-bottom: 8px;
+.details-hotel__title {
+  margin-bottom: 20px;
+  align-self: flex-end;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $white;
+  @include forTabletUp {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
 }
-}
-.details-hotel__text{
-    font-weight: 600;
-font-size: 12px;
-line-height: 1.25;
-letter-spacing: 0.02em;
-color: #BABABA;
-@include forTabletUp{
+.details-hotel__text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #bababa;
+  @include forTabletUp {
     font-size: 16px;
-line-height: 1.25;
+    line-height: 1.25;
+  }
 }
+.details-hotel__container {
+  width: 67%;
+  max-width: 259px;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  @include forTabletUp {
+    width: 549px;
+    max-width: 549px;
+    margin-bottom: 40px;
+    margin-left: 150px;
+  }
+  @include forDesktop {
+    margin-left: 253px;
+  }
 }
-.details-hotel__container{
-width: 67%;
-max-width: 259px;
-margin-bottom: 48px;
-display: flex;
-flex-direction: column;
-@include forTabletUp{
-  width: 549px;
-  max-width: 549px;
-  margin-bottom: 40px;
-  margin-left: 150px;
-}
-@include forDesktop{
-  margin-left: 253px;
-}
-
-}
-.details-hotel__pics{
-    display: flex;
-    flex-direction: row-reverse;
-    margin-bottom: 80px;
-    gap: 20px;
+.details-hotel__pics {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 80px;
+  gap: 20px;
   justify-content: flex-end;
 
-    @include forTabletUp{
-      margin-bottom: 0;
-      margin-left: 0;
-      gap: 34px;
-    }
-    @include forDesktop{
-      gap: 86px;
-      flex-direction: row;
-    }
+  @include forTabletUp {
+    margin-bottom: 0;
+    margin-left: 0;
+    gap: 34px;
+  }
+  @include forDesktop {
+    gap: 86px;
+    flex-direction: row;
+  }
 }
-.details-hotel__first-pics{
-width: 274px;
-@include forTabletUp{
-  width: 270px;
+.details-hotel__first-pics {
+  width: 274px;
+  @include forTabletUp {
+    width: 270px;
+  }
 }
-}
-.details-hotel__second-pics{
-
+.details-hotel__second-pics {
   width: 80px;
-   @include forTabletUp{
+  @include forTabletUp {
     width: 162px;
-   }
+  }
 }
-.details-hotel__third-pics{
-display: none;
-@include forTabletUp{
-  display: block;
-  width: 162px;
-}
-  @include forDesktop{
+.details-hotel__third-pics {
+  display: none;
+  @include forTabletUp {
+    display: block;
+    width: 162px;
+  }
+  @include forDesktop {
     width: 270px;
   }
 }
 
-.details-hotel__first-button{
-    background: rgba(0, 0, 0, 0.4);
-    padding: 14px 24px;
-    margin: 0 auto 16px;
-    font-family: inherit;
-    &:hover, 
-    &:focus{
+.details-hotel__first-button {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 14px 24px;
+  margin: 0 auto 16px;
+  font-family: inherit;
+  &:hover,
+  &:focus {
     border: 2px solid $white;
-    }
+  }
 }
-.details-hotel__second-button{
-    padding: 14px 35px;
-    background: rgba(0, 0, 0, 0.4);
-    margin: 0 auto;
-    &:hover, 
-    &:focus{
+.details-hotel__second-button {
+  padding: 14px 35px;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+  &:hover,
+  &:focus {
     border: 2px solid $white;
-    }
+  }
 }
-.details-hotel__wrapper{
+.details-hotel__wrapper {
   margin-left: -15px;
-margin-right: -15px;
-  @include forTabletUp{
-  display: flex;
-  flex-direction: row;
-  gap: 29px;
-  margin-left: 0;
-  margin-right: 0;
+  margin-right: -15px;
+  @include forTabletUp {
+    display: flex;
+    flex-direction: row;
+    gap: 29px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @include forDesktop {
+    gap: 32px;
+    margin-left: -33px;
+  }
 }
-@include forDesktop{
-  gap: 32px;
-  margin-left: -33px;
-}
-}
-.details-hotel__buttons{
-align-self: flex-end;
+.details-hotel__buttons {
+  align-self: flex-end;
 }

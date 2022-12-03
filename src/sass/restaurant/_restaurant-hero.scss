@@ -1,9 +1,10 @@
 .restaurant-hero {
-    max-width: 414px;
+  max-width: 414px;
 
   position: relative;
   padding: 181px 0 20px 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/restaurant-hero/mobile-restaurant-hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/restaurant-hero/mobile-restaurant-hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -16,33 +17,39 @@
       url(../images/restaurant-hero/mobile-restaurant-hero@2x.jpg);
   }
 
-    @media screen and (min-width: 1024px) {
-        max-width: 1024px;
-       padding: 188px 0 64px 0;
-       background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+  @media screen and (min-width: 1024px) {
+    max-width: 1024px;
+    padding: 188px 0 64px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/restaurant-hero/tab-restaurant-hero.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
         url(../images/restaurant-hero/tab-restaurant-hero@2x.jpg);
     }
-    }
+  }
 
-    @media screen and (min-width: 1280px) {
-        min-width: 1280px;
-       padding: 164px 0 65px 0;
-       background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+  @media screen and (min-width: 1280px) {
+    min-width: 1280px;
+    padding: 164px 0 65px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/restaurant-hero/desktop-restaurant-hero.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
         url(../images/restaurant-hero/desktop-restaurant-hero@2x.jpg);
     }
-    }
+  }
 
   &__title {
     text-transform: uppercase;
@@ -54,13 +61,13 @@
     color: $white;
 
     @media screen and (min-width: 414px) {
-        font-size: 96px;
-        margin-right: -35px;
+      font-size: 96px;
+      margin-right: -35px;
     }
 
     @media screen and (min-width: 1024px) {
-        font-size: 128px;
-        line-height: 1.0781;
+      font-size: 128px;
+      line-height: 1.0781;
     }
   }
 
@@ -75,29 +82,29 @@
     @media screen and (min-width: 1024px) {
       margin-top: 16px;
     }
-     @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
       margin-top: 32px;
     }
   }
 
   &__text-second {
     font-family: 'Times New Roman';
-font-weight: 700;
-font-size: 32px;
-line-height: 1.15;
-letter-spacing: 0.05em;
-text-transform: uppercase;
-text-align: center;
-color: #FDFBEC;
-margin-top: 44px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fdfbec;
+    margin-top: 44px;
 
- @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1024px) {
       margin-top: 56px;
       font-size: 36px;
-line-height: 1.13;
+      line-height: 1.13;
     }
-  
-@media screen and (min-width: 1280px) {
+
+    @media screen and (min-width: 1280px) {
       margin-top: 64px;
     }
   }
@@ -108,65 +115,45 @@ line-height: 1.13;
     flex-direction: column;
     gap: 24px;
 
-     @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1024px) {
       flex-direction: row;
       gap: 40px;
       margin-top: 226px;
       justify-content: flex-end;
     }
 
-       @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
       gap: 60px;
       margin-top: 249px;
-     
     }
   }
-
   &__button-hero {
-    display: block;
     margin: 0 auto;
-    border-radius: 25px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: $accentYellow;
-    border: 2px solid #ffffff;
-    transition: background 250ms linear, border 250ms linear;
     padding: 14px 24px;
     background: rgba(0, 0, 0, 0.4);
 
-     @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1024px) {
       padding: 14px 26px;
       margin: 0 0 0 0;
     }
-
-     &:hover,
-    &:focus {
-      background: $white;
-      border: 2px solid #f3c653;
-    }
-
-
   }
 
-&__button-hero--padding {
+  &__button-hero--padding {
     padding: 14px 37px;
-}
+  }
 
   &__adress-social {
     display: flex;
     gap: 21px;
     margin-top: 58px;
 
-      @media screen and (min-width: 1024px) {
-       position: absolute;
-       left: 47px;
-       bottom: 15px;
-       
+    @media screen and (min-width: 1024px) {
+      position: absolute;
+      left: 47px;
+      bottom: 15px;
     }
 
-     @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
       display: none;
     }
   }
@@ -175,25 +162,31 @@ line-height: 1.13;
     fill: $accentYellow;
   }
 
-&__address-link {
-position: absolute;
-top: 72px;
-right: 12px;
+  &__address-link {
+    position: absolute;
+    top: 72px;
+    right: 12px;
     display: flex;
     align-items: center;
     gap: 13px;
     font-family: 'Montserrat';
-font-style: normal;
-text-decoration: none;
-font-size: 12px;
-line-height: 1.25;
-letter-spacing: 0.01em;
-color: $grayLink;
-border: 1px solid rgba(243, 198, 83, 0.7);
-border-radius: 2px;
-padding: 8px 8px;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: $grayLink;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    padding: 8px 8px;
+    transition: border 250ms linear, color 250ms linear;
+    &:hover,
+    &:focus {
+      border: 1px solid $brown;
+      color: $brown;
+    }
 
-   @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1024px) {
       left: 47px;
       bottom: 64px;
       right: auto;
@@ -201,16 +194,15 @@ padding: 8px 8px;
       font-size: 16px;
     }
 
-     @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
       left: 85px;
       bottom: 64px;
       right: auto;
       top: auto;
     }
-}
+  }
 
-&__address-text {
+  &__address-text {
     width: 100%;
-}
-  
+  }
 }
