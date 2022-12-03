@@ -164,3 +164,12 @@
   align-items: center;
   justify-content: center;
 }
+.header-scroll {
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  position: fixed;
+}
