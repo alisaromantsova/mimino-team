@@ -86,6 +86,7 @@ text-transform: uppercase;
     max-width: 384px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    cursor: pointer;
     transition: background 250ms linear, color 250ms linear;
     &:hover, &:focus {
         background: $accentYellow;        

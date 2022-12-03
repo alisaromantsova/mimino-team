@@ -114,6 +114,7 @@
     width: 100%;
     max-width: 236px;
     margin-top: 32px;
+    cursor: pointer;
     transition: background 250ms linear, border 250ms linear;
     &:hover, &:focus {
         background: $white;               
