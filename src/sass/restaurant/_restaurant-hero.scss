@@ -157,10 +157,14 @@
     }
   }
 
-  &__icon {
+ &__icon {
     fill: $accentYellow;
+     transition:  fill 250ms linear;
+  &:hover,
+    &:focus {
+      fill: $brown;
   }
-
+ }
   &__address-link {
     position: absolute;
     top: 72px;

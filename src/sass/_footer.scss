@@ -1,124 +1,150 @@
 .footer {
+  background-color: $colorFooter;
+
   &__logo {
-    display: block;
-    font-family: 'Film P3';
+    font-family: 'Film P3', sans-serif;
     text-decoration: none;
+    font-weight: 700;
     font-size: 40px;
     line-height: 1.075;
     letter-spacing: 0.3em;
     color: $accentYellow;
-    padding: 98px 0 99px 20px;
     text-transform: uppercase;
 
-    @media screen and (min-width: 414px) {
-      padding: 98px 0 99px 44px;
+    transition: color 250ms linear;
+    &:hover,
+    &:focus {
+      color: $brown;
     }
 
     @include forTabletUp {
-      padding: 117px 0 118px 107px;
-      font-size: 64px;
-      line-height: 1.078;
+      font-size: 69px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: $accentYellow;
+    transition: color 250ms linear;
+    &:hover,
+    &:focus {
+      color: $brown;
+    }
+    @media screen and (max-width: 413px) {
+      font-size: 16px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @include forTabletUp {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      gap: 119px;
     }
 
     @include forDesktop {
-      padding: 120px 0 115px 131px;
+      gap: 169px;
     }
   }
 
   &__list {
-    position: absolute;
-    top: 40px;
-    right: 21px;
     display: flex;
     flex-direction: column;
     gap: 16px;
-
-    @media screen and (min-width: 414px) {
-      right: 41px;
-    }
-
-    @include forTabletUp {
-      top: 80px;
-      right: 403px;
-    }
-
-    @include forDesktop {
-      right: 529px;
-    }
+    align-self: start;
   }
 
-  &__list-link {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: $accentYellow;
-  }
-
-  &__social-list {
-    position: absolute;
-    right: 30px;
-    bottom: 40px;
+  &__address-list {
     display: flex;
-    gap: 10px;
+    gap: 6px;
 
     @media screen and (min-width: 414px) {
       gap: 21px;
     }
-
     @include forTabletUp {
-      flex-direction: column;
-      gap: 12px;
-      right: 122px;
-      top: 80px;
-      bottom: 0;
+      flex-direction: column-reverse;
+      gap: 10px;
     }
-
-    @include forDesktop {
-      right: 187px;
+  }
+  &__address-item {
+    @include forTabletUp {
+      width: 144px;
     }
   }
 
-  &__social-link {
+  &__address-item--margin {
+    @include forTabletUp {
+    }
+  }
+
+  &__address-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: $accentYellow;
+    transition: color 250ms linear, border 250ms linear;
 
     @include forTabletUp {
-      display: flex;
-      width: 143px;
-      justify-content: space-between;
-      border: 0.5px solid $accentYellow;
+      padding: 10px 8px 10px 12px;
+      border: 0.5px solid #f3c653;
       border-radius: 2px;
-      padding: 10px 15px 10px 10px;
+    }
+    &:hover,
+    &:focus {
+      border: 0.5px solid $brown;
+      color: $brown;
     }
   }
 
-  &__social-text {
+  &__address-text {
     display: none;
+
+    font-family: 'Montserrat';
+    line-height: 1.25;
+    letter-spacing: 0.02em;
 
     @include forTabletUp {
       display: block;
-      font-size: 16px;
-      line-height: 1.25;
-      letter-spacing: 0.02em;
-      color: $accentYellow;
     }
   }
 
-  &__social-icon {
-    fill: rgba(243, 198, 83, 0.7);
-  }
-
-  @include forTabletUp {
-    fill: $accentYellow;
-  }
-
-  @include forDesktop {
-    fill: rgba(243, 198, 83, 0.7);
+  &__icon {
+    fill: currentColor;
   }
 }
 
 .footer .container {
-  background-color: $colorFooter;
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 73px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 59px;
+  padding-right: 30px;
+  @media screen and (max-width: 413px) {
+    gap: calc(100vw / 10);
+    padding-left: calc(100vw / 10);
+  }
+  @include forTabletUp {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 154px;
+    right: 123px;
+    gap: 123px;
+  }
+  @include forDesktop {
+    gap: 255px;
+  }
 }
