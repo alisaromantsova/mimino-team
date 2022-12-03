@@ -42,16 +42,16 @@
   }
 })();
 
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-price-3-open]'),
-    modal: document.querySelector('[data-modal-price-3]'),
-  };
+// (() => {
+//   const refs = {
+//     openModalBtn: document.querySelector('[data-modal-price-3-open]'),
+//     modal: document.querySelector('[data-modal-price-3]'),
+//   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
+//   refs.openModalBtn.addEventListener('click', toggleModal);
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-    document.body.classList.toggle('modal-open');
-  }
-})();
+//   function toggleModal() {
+//     refs.modal.classList.toggle('is-hidden');
+//     document.body.classList.toggle('modal-open');
+//   }
+// })();

@@ -117,15 +117,14 @@
 
     cursor: pointer;
     transition: background 250ms linear, border 250ms linear;
-    &:hover, &:focus {
-        background: $white;               
-        border: 2px solid $accentYellow;
-        }
-        @include forTabletUp {
-            margin-right: 0;
-            margin-top: 20px;
-        }           
-
+    &:hover,
+    &:focus {
+      background: $white;
+      border: 2px solid $accentYellow;
+    }
+    @include forTabletUp {
+      margin-right: 0;
+      margin-top: 20px;
     }
   
 

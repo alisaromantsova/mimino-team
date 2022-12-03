@@ -12,7 +12,9 @@
           <input
             required
             type="text"
-            placeholder="Ваше ім’я"
+            placeholder="Ваше ім'я"
+            title="Вкажіть своє ім'я"
+            pattern="([a-zA-Zа-яА-Я]+)"
             class="form-table__input"
           />
           На кого забронювати столик?
@@ -21,7 +23,9 @@
           <input
             required
             type="tel"
+            title="Номер телефону повинен бути в форматі '+380xxxxxxxxx'"
             placeholder="+38 (___) ___-__-__"
+            pattern="([+][0-9\+]{12})"
             class="form-table__input"
           />
           Номер телефону
