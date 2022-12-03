@@ -1,2 +1,0 @@
-(()=>{const e={openModalBtn:document.querySelector("[data-modal-price-2p-open]"),closeModalBtn:document.querySelector("[data-modal-price-2p-close]"),modal:document.querySelector("[data-modal-price-2p]")};function o(){e.modal.classList.toggle("is-hidden"),document.body.classList.toggle("modal-open")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
-//# sourceMappingURL=hotel.7161e088.js.map
