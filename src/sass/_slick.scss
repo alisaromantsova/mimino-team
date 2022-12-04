@@ -38,7 +38,7 @@
 
 .slick__li {
   max-width: 245px;
-  margin-right: 40px;
+  margin-right: 20px;
   @include forTabletUp {
     width: 194px;
   }
@@ -48,7 +48,7 @@
   }
 }
 .slick__row {
-  
+  width: 100%;
   @media (max-width: 1023px) {
     max-width: 374px;
     max-height: 270px;
@@ -60,5 +60,11 @@
   @include forDesktop {
     width: 548px;
     height: 254px;
+  }
+}
+
+.white-arrow {
+  & .slick-arrow {
+    color: red;
   }
 }
