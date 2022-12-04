@@ -5,7 +5,7 @@
   padding-bottom: 14px;
   background-image: linear-gradient(
       180deg,
-      #000000 0%,
+      $black 0%,
       rgba(0, 0, 0, 0.55) 12.17%,
       rgba(0, 0, 0, 0) 19%
     ),
@@ -20,20 +20,20 @@
     (min-resolution: 2dppx) {
     background-image: linear-gradient(
         180deg,
-        #000000 0%,
+        $black 0%,
         rgba(0, 0, 0, 0.55) 12.17%,
         rgba(0, 0, 0, 0) 19%
       ),
       url(../images/room-hero/mobile-room-hero@2x.jpg);
   }
 
-  @media screen and (min-width: 1024px) {
+ @include forTabletUp {
     max-width: 1024px;
     padding-top: 468px;
     padding-bottom: 24px;
     background-image: linear-gradient(
         180deg,
-        #000000 0%,
+        $black 0%,
         rgba(0, 0, 0, 0.55) 12.17%,
         rgba(0, 0, 0, 0) 19%
       ),
@@ -44,7 +44,7 @@
       (min-resolution: 2dppx) {
       background-image: linear-gradient(
           180deg,
-          #000000 0%,
+          $black 0%,
           rgba(0, 0, 0, 0.55) 12.17%,
           rgba(0, 0, 0, 0) 19%
         ),
@@ -52,13 +52,13 @@
     }
   }
 
-  @media screen and (min-width: 1280px) {
+@include forDesktop {
     max-width: 1280px;
     padding-top: 683px;
     padding-bottom: 48px;
     background-image: linear-gradient(
         180deg,
-        #000000 0%,
+        $black 0%,
         rgba(0, 0, 0, 0.55) 12.17%,
         rgba(0, 0, 0, 0) 19%
       ),
@@ -69,7 +69,7 @@
       (min-resolution: 2dppx) {
       background-image: linear-gradient(
           180deg,
-          #000000 0%,
+          $black 0%,
           rgba(0, 0, 0, 0.55) 12.17%,
           rgba(0, 0, 0, 0) 19%
         ),
@@ -84,8 +84,11 @@
     letter-spacing: 0.05em;
     color: $white;
     font-family: 'Times New Roman', sans-serif;
-
-    @media screen and (min-width: 1024px) {
+    @media screen and (max-width: 413px) {
+      font-size: 80px;
+      max-width: 256px;
+    }
+   @include forTabletUp {
       font-size: 36px;
       line-height: 1.13;
     }
@@ -109,12 +112,12 @@
       width: 325px;
     }
 
-    @media screen and (min-width: 1024px) {
+   @include forTabletUp {
       font-size: 16px;
       width: 400px;
     }
 
-    @media screen and (min-width: 1280px) {
+  @include forDesktop {
       margin-top: 24px;
     }
   }
@@ -130,12 +133,12 @@
       left: 109px;
     }
 
-    @media screen and (min-width: 1024px) {
+   @include forTabletUp {
       left: 745px;
       bottom: 64px;
     }
 
-    @media screen and (min-width: 1280px) {
+  @include forDesktop {
       left: 963px;
       bottom: 66px;
     }
@@ -160,7 +163,7 @@
     right: 15px;
     gap: 10px;
 
-    @media screen and (min-width: 1024px) {
+   @include forTabletUp {
       font-size: 16px;
       position: static;
       width: 285px;
@@ -170,7 +173,7 @@
       margin-top: 24px;
     }
 
-    @media screen and (min-width: 1280px) {
+  @include forDesktop {
       display: none;
     }
   }
@@ -185,7 +188,7 @@
     flex-direction: column;
     gap: 10px;
 
-    @media screen and (min-width: 1024px) {
+   @include forTabletUp {
       position: absolute;
       gap: 21px;
       left: 372px;
@@ -193,7 +196,7 @@
       flex-direction: row;
     }
 
-    @media screen and (min-width: 1280px) {
+  @include forDesktop {
       display: none;
     }
   }

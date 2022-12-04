@@ -16,7 +16,7 @@
       url(../images/homepage-hero/mobile-homepage-hero@2x.jpg);
   }
 
-  @media screen and (min-width: 1024px) {
+ @include forTabletUp {
     max-width: 1024px;
     padding: 188px 0 64px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -33,7 +33,7 @@
     }
   }
 
-  @media screen and (min-width: 1280px) {
+  @include forDesktop {
     min-width: 1280px;
     padding: 164px 0 65px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -61,14 +61,15 @@
     max-width: 303px;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (max-width: 413px){
+    @media screen and (max-width: 413px) {
       font-size: 80px;
+      max-width: 256px;
     }
-    @media screen and (min-width: 1024px) {
+   @include forTabletUp {
       font-size: 128px;
       line-height: 1.0781;
-      max-width: 404px;      
-    }    
+      max-width: 404px;
+    }
   }
 
   &__text {
@@ -79,12 +80,12 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $white;
-    @media screen and (min-width: 1024px) {
+   @include forTabletUp {
       margin-top: 16px;
       font-size: 20px;
       line-height: 1.2;
     }
-    @media screen and (min-width: 1280px) {
+    @include forDesktop {
       margin-top: 32px;
     }
   }
@@ -100,12 +101,12 @@
     color: #fdfbec;
     margin-top: 40px;
 
-    @media screen and (min-width: 1024px) {
+   @include forTabletUp {
       font-size: 36px;
       line-height: 1.14;
       margin-top: 56px;
     }
-    @media screen and (min-width: 1280px) {
+    @include forDesktop {
       margin-top: 64px;
     }
   }
@@ -116,14 +117,14 @@
     flex-direction: column;
     gap: 24px;
 
-    @media screen and (min-width: 1024px) {
+   @include forTabletUp {
       flex-direction: row;
       gap: 40px;
       margin-top: 226px;
       justify-content: flex-end;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include forDesktop {
       gap: 60px;
       margin-top: 249px;
     }
@@ -135,7 +136,7 @@
     background: rgba(0, 0, 0, 0.4);
     cursor: pointer;
 
-    @media screen and (min-width: 1024px) {
+   @include forTabletUp {
       padding: 14px 26px;
       margin: 0 0 0 0;
     }
@@ -150,24 +151,24 @@
     gap: 21px;
     margin-top: 58px;
 
-    @media screen and (min-width: 1024px) {
+   @include forTabletUp {
       position: absolute;
       left: 47px;
       bottom: 15px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include forDesktop {
       display: none;
     }
   }
 
   &__icon {
     fill: $accentYellow;
-     transition:  fill 250ms linear;
-  &:hover,
+    transition: fill 250ms linear;
+    &:hover,
     &:focus {
       fill: $brown;
-  }
+    }
   }
   &__address-link {
     position: absolute;
@@ -187,12 +188,12 @@
     border-radius: 2px;
     padding: 8px 8px;
     transition: border 250ms linear, color 250ms linear;
-  &:hover,
+    &:hover,
     &:focus {
       border: 1px solid $brown;
       color: $brown;
     }
-    @media screen and (min-width: 1024px) {
+   @include forTabletUp {
       left: 47px;
       bottom: 64px;
       right: auto;
@@ -200,14 +201,12 @@
       font-size: 16px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include forDesktop {
       left: 85px;
       bottom: 64px;
       right: auto;
       top: auto;
     }
-
- 
   }
 
   &__address-text {

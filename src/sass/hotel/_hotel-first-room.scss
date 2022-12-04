@@ -96,10 +96,6 @@
     box-shadow: $littleShadow;
     @include forTabletUp {
       margin-top: -96px;
-      // position: absolute;
-      // margin: 0;
-      // top: -32;
-      // right: 112;
     }
     @include forDesktop {
       margin-top: -104px;
@@ -114,7 +110,6 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      // gap: 266px;
     }
   }
 

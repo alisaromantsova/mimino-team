@@ -14,7 +14,7 @@
   font-size: 36px;
   line-height: 1;
   border: none;
-  color: $white;
+  color: $black;
   background-color: transparent;
   @include forTabletUp {
     bottom: -50px;
@@ -28,22 +28,22 @@
 
 .my-slick-prev {
   left: 0;
-  //   @media screen and (min-width: 768px) {
-  //     left: -50px;
-  //   }
-  //   @media screen and (min-width: 1360px) {
-  //     left: -100px;
-  //   }
 }
 .my-slick-next {
-  right: 160px;
-  //   @media screen and (min-width: 768px) {
-  //     right: -50px;
-  //   }
-  //   @media screen and (min-width: 1360px) {
-  //     right: -100px;
-  //   }
+  right: 90px;
 }
-.slick-arrow--white {
+.slick-arrow--white.slick-arrow--white {
   color: $white;
+}
+
+.slick__li {
+  max-width: 245px;
+  width: 80%;
+  @include forTabletUp {
+    width: 194px;
+  }
+  @include forDesktop {
+    width: 254px;
+    max-width: 254px;
+  }
 }

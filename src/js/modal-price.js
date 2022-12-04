@@ -1,27 +1,4 @@
-// const refs = {
-//   openModalBtn: document.querySelector('[data-modal-price-open]'),
-//   closeModalBtn: document.querySelector('[data-modal-price-close]'),
-//   modal: document.querySelector('[data-modal-price]'),
-//   modalinner:document.querySelector('.modal-price'),
-// };
-// function toggleModal() {
-//   refs.modal.classList.toggle('is-hidden');
-//   document.body.classList.toggle('modal-open');
-// }
-// function toggleModalClickOutside(e) {
-//   if(e.target === refs.modal){
-//   refs.modal.classList.toggle('is-hidden');
-//   document.body.classList.toggle('modal-open');
-//   }
-// }
 
-
-
-// (() => {
-//   if(refs.openModalBtn)refs.openModalBtn.addEventListener('click', toggleModal);
-//   if(refs.closeModalBtn)refs.closeModalBtn.addEventListener('click', toggleModal);
-//   document.addEventListener('click',toggleModalClickOutside)
-// })();
 const refsPrice = {
   openModalBtn: document.querySelector('[data-modal-price-open]'),
   closeModalBtn: document.querySelector('[data-modal-price-close]'),
@@ -30,7 +7,14 @@ const refsPrice = {
   openModalBtn3: document.querySelector('[data-modal-price-2p-open]'),
   modal: document.querySelector('[data-modal-price]'),
 };
-function toggleModalPrice() {
+function toggleModalPrice(e) {
+  const modalApartmentType = refsPrice.modal.children[0].children[1].children[1]
+  // console.log(e.target)
+  // console.dir(refsPrice.modal.children[0].children[1].children[1].textContent)
+  if (e.target === refsPrice.openModalBtn)modalApartmentType.textContent = 'Двомісний люкс'
+  if (e.target === refsPrice.openModalBtn1)modalApartmentType.textContent = 'Двомісний люкс'
+  if (e.target === refsPrice.openModalBtn3)modalApartmentType.textContent = 'Двомісний номер'
+  if (e.target === refsPrice.openModalBtn2)modalApartmentType.textContent = 'Трьохісний номер'
   refsPrice.modal.classList.toggle('is-hidden');
   document.body.classList.toggle('modal-open');
 }
@@ -56,46 +40,4 @@ const modalOpenPrice = (refs) => {
 }
 modalOpenPrice(refsPrice)
 
-// (() => {
-//   const refs = {
-//     openModalBtn: document.querySelector('[data-modal-price-1-open]'),
-//     modal: document.querySelector('[data-modal-price-1]'),
-//   };
 
-//   if(refs.openModalBtn)refs.openModalBtn.addEventListener('click', toggleModal);
-
-//   function toggleModal() {
-//     refs.modal.classList.toggle('is-hidden');
-//     document.body.classList.toggle('modal-open');
-//   }
-// })();
-
-// (() => {
-//   const refs = {
-//     openModalBtn: document.querySelector('[data-modal-price-2-open]'),
-//     modal: document.querySelector('[data-modal-price-2]'),
-//   };
-
-//   if(refs.openModalBtn)refs.openModalBtn.addEventListener('click', toggleModal);
-
-//   function toggleModal() {
-//     refs.modal.classList.toggle('is-hidden');
-//     document.body.classList.toggle('modal-open');
-//   }
-// })();
-
-
-
-// (() => {
-//   const refs = {
-//     openModalBtn: document.querySelector('[data-modal-price-3-open]'),
-//     modal: document.querySelector('[data-modal-price-3]'),
-//   };
-
-//   refs.openModalBtn.addEventListener('click', toggleModal);
-
-//   function toggleModal() {
-//     refs.modal.classList.toggle('is-hidden');
-//     document.body.classList.toggle('modal-open');
-//   }
-// })();

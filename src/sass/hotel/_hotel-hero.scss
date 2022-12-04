@@ -17,7 +17,7 @@
       url(../images/room-hero/mobile-room-hero@2x.jpg);
   }
 
-  @media screen and (min-width: 1024px) {
+  @include forTabletUp {
     max-width: 1024px;
     padding: 188px 0 64px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -34,7 +34,7 @@
     }
   }
 
-  @media screen and (min-width: 1280px) {
+  @include forDesktop {
     min-width: 1280px;
     padding: 164px 0 65px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -62,7 +62,11 @@
     margin: 0 auto;
     max-width: 303px;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (max-width: 413px) {
+      font-size: 80px;
+      max-width: 256px;
+    }
+    @include forTabletUp {
       font-size: 128px;
       max-width: 404px;
       line-height: 1.0781;
@@ -85,14 +89,14 @@
     flex-direction: column;
     gap: 24px;
 
-    @media screen and (min-width: 1024px) {
+    @include forTabletUp {
       flex-direction: row;
       gap: 40px;
       margin-top: 226px;
       justify-content: flex-end;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include forDesktop {
       gap: 60px;
       margin-top: 249px;
     }
@@ -103,7 +107,7 @@
     padding: 14px 24px;
     background: rgba(0, 0, 0, 0.4);
 
-    @media screen and (min-width: 1024px) {
+    @include forTabletUp {
       padding: 14px 26px;
       margin: 0 0 0 0;
     }
@@ -118,13 +122,13 @@
     gap: 21px;
     margin-top: 58px;
 
-    @media screen and (min-width: 1024px) {
+    @include forTabletUp {
       position: absolute;
       left: 47px;
       bottom: 15px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include forDesktop {
       display: none;
     }
   }
@@ -162,7 +166,7 @@
       color: $brown;
     }
 
-    @media screen and (min-width: 1024px) {
+    @include forTabletUp {
       left: 47px;
       bottom: 64px;
       right: auto;
@@ -170,7 +174,7 @@
       font-size: 16px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include forDesktop {
       left: 85px;
       bottom: 64px;
       right: auto;

@@ -98,7 +98,7 @@
 
     @include forTabletUp {
       padding: 10px 8px 10px 12px;
-      border: 0.5px solid #f3c653;
+      border: 0.5px solid $accentYellow;
       border-radius: 2px;
     }
     &:hover,
@@ -134,7 +134,7 @@
   padding-left: 59px;
   padding-right: 30px;
   @media screen and (max-width: 413px) {
-    gap: calc(100vw / 10);
+    gap: calc(100vw / 5);
     padding-left: calc(100vw / 10);
   }
   @include forTabletUp {
