@@ -5,13 +5,14 @@
 .about-hotel .container {
   position: relative;
   padding-top: 16px;
-  padding-bottom: 20px;
+  padding-bottom: 72px;
   @include forTabletUp {
     padding-top: 129px;
-    padding-bottom: 32px;
+    padding-bottom: 74px;
   }
   @include forDesktop {
     padding-top: 120px;
+    padding-bottom: 104px;
   }
 }
 .about-hotel__subtitle {
@@ -29,19 +30,8 @@
 }
 
 .about-hotel .brand-name {
-  font-family: 'Film P3';
   text-align: end;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.075;
-  letter-spacing: 0.3em;
-  color: #494848;
-  text-transform: uppercase;
-  @include forTabletUp {
-    font-size: 64px;
-    line-height: 1.078;
-  }
+  margin-right: -15px;
 }
 .about-hotel__title-text {
   margin-top: 12px;
@@ -82,7 +72,6 @@
   @include forDesktop {
     width: 460px;
     max-width: 460px;
-    
   }
 }
 
@@ -134,7 +123,7 @@
 .about-hotel__pics {
   display: flex;
   gap: 24px;
-  margin-right: -15px;
+  margin-left: -15px;
   @include forTabletUp {
     gap: 40px;
     margin-right: 0;

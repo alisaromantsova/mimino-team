@@ -6,7 +6,7 @@
   border-radius: 2px;
   width: 100%;
   max-width: 414px;
-  background-color: #fff;
+  background-color: $white;
   transform: translateX(-50%);
   z-index: 3;
   @include forTabletUp {
