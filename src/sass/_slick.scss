@@ -27,23 +27,52 @@
 }
 
 .my-slick-prev {
-  left: 0;
+  right: 220px;
+  @include forTabletUp{
+    right: 75px;
+  }
 }
 .my-slick-next {
-  right: 90px;
+  right: 145px;
+  @include forTabletUp {
+      right: 0px;
+    }
 }
+.hotel__slider--second .my-slick-prev {
+  left: 145px;
+    @include forTabletUp {
+        left: 0px;
+      }
+}
+
+.hotel__slider--second .my-slick-next {
+  left: 220px;
+    @include forTabletUp {
+        left: 75px;
+      }
+}
+
 .slick-arrow--white.slick-arrow--white {
   color: $white;
 }
 
 .slick__li {
-  max-width: 245px;
-  width: 80%;
+  max-width: 410px;
+  width: 100%;
+  
   @include forTabletUp {
-    width: 194px;
+    width: 500px;
   }
   @include forDesktop {
     width: 254px;
     max-width: 254px;
   }
+}
+
+.slick-slide{
+  margin-left: 16px;
+}
+.hotel__slider--second .slick-slide{
+  margin-left: 0;
+  margin-right: 16px;
 }
