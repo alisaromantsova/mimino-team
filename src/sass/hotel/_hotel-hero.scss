@@ -17,9 +17,8 @@
       url(../images/room-hero/mobile-room-hero@2x.jpg);
   }
 
-  @include forTabletUp {
+  @media screen and (min-width: 414px) {
     max-width: 1024px;
-    padding: 188px 0 64px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/room-hero/tab-room-hero.jpg);
 
@@ -34,9 +33,10 @@
     }
   }
 
-  @include forDesktop {
-    min-width: 1280px;
-    padding: 164px 0 65px 0;
+  @include forTabletUp {
+    max-width: 1280px;
+    padding: 188px 0 64px 0;
+
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/room-hero/desktop-room-hero.jpg);
 
@@ -49,6 +49,9 @@
         ),
         url(../images/room-hero/desktop-room-hero@2x.jpg);
     }
+  }
+  @include forDesktop {
+    padding: 164px 0 65px 0;
   }
 
   &__title {

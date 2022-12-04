@@ -27,10 +27,9 @@
       url(../images/room-hero/mobile-room-hero@2x.jpg);
   }
 
- @include forTabletUp {
+  @media screen and (min-width: 414px) {
     max-width: 1024px;
-    padding-top: 468px;
-    padding-bottom: 24px;
+
     background-image: linear-gradient(
         180deg,
         $black 0%,
@@ -52,10 +51,10 @@
     }
   }
 
-@include forDesktop {
+  @include forTabletUp {
+    padding-top: 468px;
+    padding-bottom: 24px;
     max-width: 1280px;
-    padding-top: 683px;
-    padding-bottom: 48px;
     background-image: linear-gradient(
         180deg,
         $black 0%,
@@ -76,7 +75,10 @@
         url(../images/room-hero/desktop-room-hero@2x.jpg);
     }
   }
-
+  @include forDesktop {
+    padding-top: 683px;
+    padding-bottom: 48px;
+  }
   &__title {
     font-weight: 700;
     font-size: 28px;
@@ -88,7 +90,7 @@
       font-size: 80px;
       max-width: 256px;
     }
-   @include forTabletUp {
+    @include forTabletUp {
       font-size: 36px;
       line-height: 1.13;
     }
@@ -112,12 +114,12 @@
       width: 325px;
     }
 
-   @include forTabletUp {
+    @include forTabletUp {
       font-size: 16px;
       width: 400px;
     }
 
-  @include forDesktop {
+    @include forDesktop {
       margin-top: 24px;
     }
   }
@@ -133,12 +135,12 @@
       left: 109px;
     }
 
-   @include forTabletUp {
+    @include forTabletUp {
       left: 745px;
       bottom: 64px;
     }
 
-  @include forDesktop {
+    @include forDesktop {
       left: 963px;
       bottom: 66px;
     }
@@ -163,7 +165,7 @@
     right: 15px;
     gap: 10px;
 
-   @include forTabletUp {
+    @include forTabletUp {
       font-size: 16px;
       position: static;
       width: 285px;
@@ -173,7 +175,7 @@
       margin-top: 24px;
     }
 
-  @include forDesktop {
+    @include forDesktop {
       display: none;
     }
   }
@@ -188,7 +190,7 @@
     flex-direction: column;
     gap: 10px;
 
-   @include forTabletUp {
+    @include forTabletUp {
       position: absolute;
       gap: 21px;
       left: 372px;
@@ -196,7 +198,7 @@
       flex-direction: row;
     }
 
-  @include forDesktop {
+    @include forDesktop {
       display: none;
     }
   }

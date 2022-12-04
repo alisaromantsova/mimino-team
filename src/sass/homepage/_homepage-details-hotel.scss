@@ -24,7 +24,7 @@
       url(../images/homepage-images/details-hotel/details-hotel_mobile@2x.jpg);
   }
 
-  @include forTabletUp {
+  @media screen and (min-width: 414px) {
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
@@ -44,7 +44,7 @@
     }
   }
 
-  @include forDesktop {
+  @include forTabletUp {
     max-width: 1280px;
     background-image: linear-gradient(
         to right,
