@@ -38,12 +38,27 @@
 
 .slick__li {
   max-width: 245px;
-  width: 80%;
+  margin-right: 40px;
   @include forTabletUp {
     width: 194px;
   }
   @include forDesktop {
     width: 254px;
     max-width: 254px;
+  }
+}
+.slick__row {
+  
+  @media (max-width: 1023px) {
+    max-width: 374px;
+    max-height: 270px;
+  }
+  @include forTabletUp {
+    width: 428px;
+    height: 194px;
+  }
+  @include forDesktop {
+    width: 548px;
+    height: 254px;
   }
 }

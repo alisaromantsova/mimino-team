@@ -4,7 +4,7 @@ $('.one-time').slick({
   nextArrow: '<button type="button" class="my-slick-next">&xrarr;</button>',
   infinite: true,
   speed: 300,
-  slidesToShow: 1,
+  slidesToShow: 2,
   adaptiveHeight: true,
 });
 

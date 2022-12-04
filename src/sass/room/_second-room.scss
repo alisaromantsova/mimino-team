@@ -1,0 +1,144 @@
+.second-room__img {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 413px;
+  @media (min-width: 414px) {
+    max-width: 1023px;
+    width: 1023px;
+    @include forTabletUp {
+      max-width: 1280px;
+      width: 1280px;
+    }
+  }
+}
+.second-room-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.second-container {
+  position: absolute;
+  left: 318px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  @include forTabletUp {
+    bottom: 24px;
+    left: 130px;
+  }
+  @include forDesktop {
+    left: 0;
+    bottom: 48px;
+  }
+}
+.main-container {
+  position: relative;
+  width: 100%;
+  max-width: 413px;
+
+  @media (min-width: 414px) {
+    max-width: 1023px;
+    width: 1023px;
+    @include forTabletUp {
+      max-width: 1280px;
+      width: 1280px;
+    }
+  }
+}
+.main-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 143px;
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 2;
+}
+// .second-room-hero__title {
+//   font-weight: 700;
+//   font-size: 28px;
+//   line-height: 1.14;
+//   letter-spacing: 0.05em;
+//   color: $white;
+//   font-family: 'Times New Roman', sans-serif;
+//   text-transform: uppercase;
+//   margin-bottom: 8px;
+//   @media screen and (max-width: 413px) {
+//     font-size: 80px;
+//     max-width: 256px;
+//   }
+//   @include forTabletUp {
+//     font-size: 36px;
+//     line-height: 1.13;
+//   }
+// }
+
+// .second-room-hero__text {
+//   font-weight: 700;
+//   font-size: 12px;
+//   line-height: 1.25;
+//   letter-spacing: 0.02em;
+//   width: 100%;
+
+//   color: $white;
+//   font-family: 'Montserrat', sans-serif;
+
+//   @media screen and (min-width: 414px) {
+//     width: 325px;
+//   }
+
+//   @include forTabletUp {
+//     font-size: 16px;
+//     width: 400px;
+//   }
+
+//   @include forDesktop {
+//   }
+// }
+// .second-room-hero__adress-link {
+//   font-family: 'Montserrat', sans-serif;
+//   font-weight: 400;
+//   font-size: 12px;
+//   line-height: 1.25;
+//   letter-spacing: 0.01em;
+//   color: $grayLink;
+//   border: 1px solid rgba(243, 198, 83, 0.7);
+//   border-radius: 2px;
+//   padding: 8px;
+//   text-decoration: none;
+//   display: none;
+//   @include forTabletUp {
+//     display: block;
+//     font-size: 16px;
+//     width: 285px;
+//     height: 56px;
+//   }
+
+//   @include forDesktop {
+//     display: none;
+//   }
+// }
+// .room-hero__link-text {
+// }
+// .secons-room-hero__adress-social {
+// }
+// .second-room-hero__social-link {
+//   fill: $accentYellow;
+// }
+// .second-room-hero__button--hero {
+//   padding: 13px 34px;
+//   background: rgba(0, 0, 0, 0.4);
+// }
+// .second-room__bottom {
+//   display: flex;
+//   align-items: center;
+//   gap: 70px;
+// }
