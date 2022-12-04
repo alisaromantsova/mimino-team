@@ -106,7 +106,7 @@
     display: flex;
     flex-direction: column;
     gap: 72px;
-    overflow: hidden;
+   
     @include forTabletUp {
       flex-direction: row;
       align-items: center;
