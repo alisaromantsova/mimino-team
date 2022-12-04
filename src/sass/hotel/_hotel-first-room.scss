@@ -4,6 +4,7 @@
   .container {
     padding-top: 32px;
     padding-bottom: 32px;
+    overflow: hidden;
     @include forTabletUp {
       position: relative;
       padding-top: 64px;
@@ -115,19 +116,20 @@
   }
 
   &__slider {
-    margin-left: -16px;
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    position: relative;
+    right: 120px;
     @include forTabletUp {
       margin-left: 0;
       gap: 40px;
+      right: 0;
     }
   }
 
-  &__slider-img {
-    box-shadow: $littleShadow;
-  }
+  // &__slider-img {
+  //   box-shadow: $littleShadow;
+  // }
 
   &__button {
     margin: 0 auto;

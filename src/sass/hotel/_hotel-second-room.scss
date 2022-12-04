@@ -55,10 +55,10 @@
 
   &__slider--second {
     flex-direction: row-reverse;
-    margin-left: 0;
-    margin-right: -16px;
+    right: -120px;
     @include forTabletUp {
-      margin-right: 0;
+      left: 0;
+
     }
   }
 }
