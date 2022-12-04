@@ -57,9 +57,11 @@
 }
 
 .slick__li {
+
   max-width: 410px;
   width: 100%;
   
+
   @include forTabletUp {
     width: 500px;
   }
@@ -69,10 +71,12 @@
   }
 }
 
+
 .slick-slide{
   margin-left: 16px;
 }
 .hotel__slider--second .slick-slide{
   margin-left: 0;
   margin-right: 16px;
+
 }
