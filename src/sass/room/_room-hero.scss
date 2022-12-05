@@ -87,7 +87,7 @@
     color: $white;
     font-family: 'Times New Roman', sans-serif;
     @media screen and (max-width: 413px) {
-      font-size: 80px;
+      font-size: 18px;
       max-width: 256px;
     }
     @include forTabletUp {
@@ -132,16 +132,16 @@
     background: rgba(0, 0, 0, 0.4);
 
     @media screen and (min-width: 414px) {
-      left: 109px;
+      left: 94px;
     }
 
     @include forTabletUp {
-      left: 745px;
+      left: 698px;
       bottom: 64px;
     }
 
     @include forDesktop {
-      left: 963px;
+      left: 878px;
       bottom: 66px;
     }
   }
@@ -194,7 +194,7 @@
       position: absolute;
       gap: 21px;
       left: 372px;
-      bottom: 38px;
+      bottom: 0;
       flex-direction: row;
     }
 

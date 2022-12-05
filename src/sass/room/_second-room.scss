@@ -1,15 +1,22 @@
 .second-room__img {
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
-  max-width: 413px;
-  @media (min-width: 414px) {
-    max-width: 1023px;
-    width: 1023px;
-    @include forTabletUp {
-      max-width: 1280px;
-      width: 1280px;
-    }
+  max-width: 414px;
+  // @media (min-width: 414px) {
+  //   max-width: 1023px;
+  //   width: 1023px;
+  // }
+  @include forTabletUp {
+    max-width: 1024px;
+    width: 1024px;
   }
+  @include forDesktop {
+    max-width: 1280px;
+    width: 1280px;
+  }
+}
+.second-room__img img {
+  width: 100%;
 }
 .second-room-hero {
   display: flex;
@@ -19,14 +26,14 @@
 }
 .second-container {
   position: absolute;
-  left: 318px;
+  left: 0;
   bottom: 10px;
   display: flex;
   flex-direction: column;
   gap: 8px;
   @include forTabletUp {
     bottom: 24px;
-    left: 130px;
+    // left: 130px;
   }
   @include forDesktop {
     left: 0;
@@ -35,17 +42,17 @@
 }
 .main-container {
   position: relative;
-  width: 100%;
-  max-width: 413px;
+  // width: 100%;
+  // max-width: 413px;
 
-  @media (min-width: 414px) {
-    max-width: 1023px;
-    width: 1023px;
-    @include forTabletUp {
-      max-width: 1280px;
-      width: 1280px;
-    }
-  }
+  // @media (min-width: 414px) {
+  //   max-width: 1023px;
+  //   width: 1023px;
+  //   @include forTabletUp {
+  //     max-width: 1280px;
+  //     width: 1280px;
+  //   }
+  // }
 }
 .main-container::after {
   content: '';
