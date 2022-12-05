@@ -1,7 +1,8 @@
+.hotel-hero .container {
+position: relative;
+}
 .hotel-hero {
   max-width: 414px;
-  background-color: green;
-  position: relative;
   padding: 181px 0 20px 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(../images/room-hero/mobile-room-hero.jpg);
@@ -128,7 +129,7 @@
     @include forTabletUp {
       position: absolute;
       left: 47px;
-      bottom: 15px;
+      bottom: -49px;
     }
 
     @include forDesktop {
@@ -147,7 +148,7 @@
 
   &__address-link {
     position: absolute;
-    top: 72px;
+    top: -109px;
     right: 12px;
     display: flex;
     align-items: center;
@@ -171,7 +172,7 @@
 
     @include forTabletUp {
       left: 47px;
-      bottom: 64px;
+      bottom: 0;
       right: auto;
       top: auto;
       font-size: 16px;
@@ -179,7 +180,7 @@
 
     @include forDesktop {
       left: 85px;
-      bottom: 64px;
+      bottom: -1px;
       right: auto;
       top: auto;
     }
