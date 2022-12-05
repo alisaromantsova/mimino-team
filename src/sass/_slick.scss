@@ -1,98 +1,98 @@
-.my-slick-prev,
-.my-slick-next {
-  position: absolute;
-  bottom: -40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  width: 50px;
-  height: 40px;
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 1;
-  border: none;
-  color: $black;
-  background-color: transparent;
-  @include forTabletUp {
-    bottom: -50px;
-  }
-  transition: color 250ms linear;
-  &:hover,
-  &:focus {
-    color: $brown;
-  }
-}
+// .my-slick-prev,
+// .my-slick-next {
+//   position: absolute;
+//   bottom: -40px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 0;
+//   width: 50px;
+//   height: 40px;
+//   cursor: pointer;
+//   font-family: inherit;
+//   font-weight: 900;
+//   font-size: 36px;
+//   line-height: 1;
+//   border: none;
+//   color: $black;
+//   background-color: transparent;
+//   @include forTabletUp {
+//     bottom: -50px;
+//   }
+//   transition: color 250ms linear;
+//   &:hover,
+//   &:focus {
+//     color: $brown;
+//   }
+// }
 
-.my-slick-prev {
-  right: 220px;
-  @include forTabletUp{
-    right: 75px;
-  }
-}
-.my-slick-next {
-  right: 145px;
-  @include forTabletUp {
-      right: 0px;
-    }
-}
-.hotel__slider--second .my-slick-prev {
-  left: 145px;
-    @include forTabletUp {
-        left: 0px;
-      }
-}
+// .my-slick-prev {
+//   right: 220px;
+//   @include forTabletUp{
+//     right: 75px;
+//   }
+// }
+// .my-slick-next {
+//   right: 145px;
+//   @include forTabletUp {
+//       right: 0px;
+//     }
+// }
+// .hotel__slider--second .my-slick-prev {
+//   left: 145px;
+//     @include forTabletUp {
+//         left: 0px;
+//       }
+// }
 
-.hotel__slider--second .my-slick-next {
-  left: 220px;
-    @include forTabletUp {
-        left: 75px;
-      }
-}
+// .hotel__slider--second .my-slick-next {
+//   left: 220px;
+//     @include forTabletUp {
+//         left: 75px;
+//       }
+// }
 
-.about-kitchen .hotel__slider--second .my-slick-prev {
-  left: 145px;
+// .about-kitchen .hotel__slider--second .my-slick-prev {
+//   left: 145px;
 
-  @include forTabletUp {
-    left: 275px;
-  }
-}
+//   @include forTabletUp {
+//     left: 275px;
+//   }
+// }
 
-.about-kitchen .hotel__slider--second .my-slick-next {
-  left: 220px;
+// .about-kitchen .hotel__slider--second .my-slick-next {
+//   left: 220px;
 
-  @include forTabletUp {
-    left: 350px;
-  }
-}
+//   @include forTabletUp {
+//     left: 350px;
+//   }
+// }
 
-.slick-arrow--white.slick-arrow--white {
-  color: $white;
-}
+// .slick-arrow--white.slick-arrow--white {
+//   color: $white;
+// }
 
-.slick__li {
+// .slick__li {
 
-  max-width: 410px;
-  width: 100%;
+//   max-width: 410px;
+//   width: 100%;
   
 
-  @include forTabletUp {
-    width: 500px;
-  }
-  @include forDesktop {
-    width: 254px;
-    max-width: 254px;
-  }
-}
+//   @include forTabletUp {
+//     width: 500px;
+//   }
+//   @include forDesktop {
+//     width: 254px;
+//     max-width: 254px;
+//   }
+// }
 
 
-.slick-slide{
-  margin-left: 16px;
-}
-.hotel__slider--second .slick-slide{
-  margin-left: 0;
-  margin-right: 16px;
+// .slick-slide{
+//   margin-left: 16px;
+// }
+// .hotel__slider--second .slick-slide{
+//   margin-left: 0;
+//   margin-right: 16px;
 
-}
+// }

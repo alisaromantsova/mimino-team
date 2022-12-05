@@ -106,7 +106,7 @@
   &__bottom-box {
     display: flex;
     flex-direction: column;
-    gap: 72px;
+    // gap: 72px;
    
     @include forTabletUp {
       flex-direction: row;

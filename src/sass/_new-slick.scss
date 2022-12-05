@@ -1,0 +1,534 @@
+.slick-slider{
+}
+
+
+.slick-list{
+    overflow: visible;
+}
+
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    min-width:0;
+}
+
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    font-size: 0;
+    transition: background 0.3s ease-out;
+}
+
+
+.restoraunt-x2 {
+    // position: relative;
+    margin-left: auto;
+    left: 14px;
+
+    width: 330px;
+    height: 320px;
+
+    @include forTabletUp{
+        width: 448px;
+        height: 220px;
+
+        left: 0;
+    }
+    @include forDesktop {
+
+    }
+
+    .slick-arrow.slick-prev{
+        width: 30px;
+        height: 16px;
+
+        left: 218px;
+        top: 275px;
+        background: url('../images//slick/slider-arrow-black-left.svg');
+        background-position: center;
+
+        &:hover,
+        &:focus{
+            background: url('../images//slick/slider-arrow-yellow-left.svg');
+            background-position: center;
+        }
+
+
+        @include forTabletUp{
+            top: 236px;
+            left: 336px;
+        }
+        @include forDesktop {
+    
+        }
+
+        &::before{
+            content:'';
+        }
+    }
+    .slick-arrow.slick-next{
+        width: 30px;
+        height: 16px;
+
+        right: 14px;
+        top: 275px;
+        background: url('../images//slick/slider-arrow-black-right.svg');
+        background-position: center;
+
+        &:hover,
+        &:focus{
+            background: url('../images//slick/slider-arrow-yellow-right.svg');
+            background-position: center;
+        }
+
+        @include forTabletUp{
+            top: 236px;
+            right: 22px;
+        }
+        @include forDesktop {
+    
+        }
+
+        &::before{
+            content:'';
+        }
+    }
+
+    & .slider__item{
+        margin: 0 10px;
+
+        @include forTabletUp{
+            margin: 0 20px;
+        }
+        @include forDesktop {
+
+        }
+    }
+}
+
+.restoraunt-x3 {
+    // position: relative;
+    margin-left: 40px;
+    // left: 14px;
+
+    width: 374px;
+    height: 320px;
+
+    @include forTabletUp{
+        width: 662px;
+        height: 220px;
+
+        left: 0;
+        margin-left: 0;
+    }
+    @include forDesktop {
+
+    }
+
+    .slick-arrow.slick-prev{
+        width: 30px;
+        height: 16px;
+
+        left: 4px;
+        top: 275px;
+        background: url('../images//slick/slider-arrow-left.svg');
+        background-position: center;
+
+        &:hover,
+        &:focus{
+            background: url('../images//slick/slider-arrow-yellow-left.svg');
+            background-position: center;
+        }
+
+
+        @include forTabletUp{
+            top: 236px;
+        }
+        @include forDesktop {
+    
+        }
+
+        &::before{
+            content:'';
+        }
+    }
+    .slick-arrow.slick-next{
+        width: 30px;
+        height: 16px;
+
+        right: 276px;
+        top: 275px;
+        background: url('../images//slick/slider-arrow-right.svg');
+        background-position: center;
+
+        &:hover,
+        &:focus{
+            background: url('../images//slick/slider-arrow-yellow-right.svg');
+            background-position: center;
+        }
+
+        @include forTabletUp{
+            top: 236px;
+            right: 572px;
+        }
+        @include forDesktop {
+    
+        }
+
+        &::before{
+            content:'';
+        }
+    }
+
+    & .slider__item{
+        margin: 0 10px;
+
+        @include forTabletUp{
+            margin: 0 20px;
+        }
+        @include forDesktop {
+
+        }
+    }
+}
+
+.hotel-x2 {
+    // position: relative;
+    margin-left: auto;
+    left: -68px;
+
+    width: 330px;
+    height: 320px;
+
+    @include forTabletUp{
+        margin-left: 0;
+        left: 0;
+
+        width: 448px;
+        height: 220px;
+    }
+    @include forDesktop {
+
+    }
+
+    .slick-track{
+        // padding-left: 168px;
+        left: 84px;
+
+        @include forTabletUp{
+            left: 0;
+        }
+        @include forDesktop {
+    
+        }
+    }
+
+    .slick-arrow.slick-prev{
+        width: 30px;
+        height: 16px;
+
+        left: 14px;
+        top: 275px;
+        background: url('../images//slick/slider-arrow-black-left.svg');
+        background-position: center;
+
+        
+        &:hover,
+        &:focus{
+            background: url('../images//slick/slider-arrow-yellow-left.svg');
+            background-position: center;
+        }
+
+        @include forTabletUp{
+            top: 236px;
+            left: 5px;
+        }
+        @include forDesktop {
+    
+        }
+
+        &::before{
+            content:'';
+        }
+    }
+    .slick-arrow.slick-next{
+        width: 30px;
+        height: 16px;
+
+        right: 220px;
+        top: 275px;
+        background: url('../images//slick/slider-arrow-black-right.svg');
+        background-position: center;
+
+        &:hover,
+        &:focus{
+            background: url('../images//slick/slider-arrow-yellow-right.svg');
+            background-position: center;
+        }
+
+        @include forTabletUp{
+            top: 236px;
+            right: 350px;
+        }
+        @include forDesktop {
+    
+        }
+
+        &::before{
+            content:'';
+        }
+    }
+
+    & .slider__item{
+        margin: 0 10px;
+
+        @include forTabletUp{
+            margin: 0 20px;
+        }
+        @include forDesktop {
+
+        }
+    }
+}
+
+.hotel-x3 {
+    // position: relative;
+    // margin-left: auto;
+    // left: -84px;
+    padding-top:44px;
+    padding-bottom: 80px;
+
+    width: 374px;
+    // height: 320px;
+
+    @include forTabletUp{
+        margin-left: 0;
+        left: 0;
+
+        width: 662px;
+        height: 270px;
+    }
+    @include forDesktop {
+
+    }
+
+    .slick-track{
+        // padding-left: 168px;
+        left: 130px;
+
+        @include forTabletUp{
+            left: 0;
+        }
+        @include forDesktop {
+    
+        }
+    }
+
+    .slick-arrow.slick-prev{
+        width: 30px;
+        height: 16px;
+
+        left: 278px;
+        top: 320px;
+        background: url('../images//slick/slider-arrow-left.svg');
+        background-position: center;
+
+        &:hover,
+        &:focus{
+            background: url('../images//slick/slider-arrow-yellow-left.svg');
+            background-position: center;
+        }
+
+        @include forTabletUp{
+            top: 300px;
+            left: 576px;
+        }
+        @include forDesktop {
+    
+        }
+
+        &::before{
+            content:'';
+        }
+    }
+    .slick-arrow.slick-next{
+        width: 30px;
+        height: 16px;
+
+        right: 4px;
+        top: 320px;
+        background: url('../images//slick/slider-arrow-right.svg');
+        background-position: center;
+
+        &:hover,
+        &:focus{
+            background: url('../images//slick/slider-arrow-yellow-right.svg');
+            background-position: center;
+        }
+
+        @include forTabletUp{
+            top: 300px;
+            right: 4px;
+        }
+        @include forDesktop {
+    
+        }
+
+        &::before{
+            content:'';
+        }
+    }
+
+    & .slider__item{
+        margin: 0 10px;
+
+        @include forTabletUp{
+            margin: 0 20px;
+        }
+        @include forDesktop {
+
+        }
+    }
+}
+
+/////////////////////////////////////////////////// page restoraunt =====================================
+
+// .restoraunt-page-restoraunt {
+//     position: relative;
+//     margin-left: auto;
+//     left: 14px;
+
+//     width: 330px;
+//     height: 320px;
+
+//     @include forTabletUp{
+//         width: 448px;
+//         height: 220px;
+
+//         left: 0;
+//     }
+//     @include forDesktop {
+
+//     }
+
+//     .slick-arrow.slick-prev{
+//         width: 30px;
+//         height: 16px;
+
+//         left: 218px;
+//         top: 275px;
+//         background: url('../images//slick/slider-arrow-black-left.svg');
+//         background-position: center;
+
+//         &:hover,
+//         &:focus{
+//             background: url('../images//slick/slider-arrow-yellow-left.svg');
+//             background-position: center;
+//         }
+
+
+//         @include forTabletUp{
+//             top: 236px;
+//             left: 336px;
+//         }
+//         @include forDesktop {
+    
+//         }
+
+//         &::before{
+//             content:'';
+//         }
+//     }
+//     .slick-arrow.slick-next{
+//         width: 30px;
+//         height: 16px;
+
+//         right: 14px;
+//         top: 275px;
+//         background: url('../images//slick/slider-arrow-black-right.svg');
+//         background-position: center;
+
+//         &:hover,
+//         &:focus{
+//             background: url('../images//slick/slider-arrow-yellow-right.svg');
+//             background-position: center;
+//         }
+
+//         @include forTabletUp{
+//             top: 236px;
+//             right: 22px;
+//         }
+//         @include forDesktop {
+    
+//         }
+
+//         &::before{
+//             content:'';
+//         }
+//     }
+
+//     & .slider__item{
+//         margin: 0 10px;
+
+//         @include forTabletUp{
+//             margin: 0 20px;
+//         }
+//         @include forDesktop {
+
+//         }
+//     }
+// }
+
+// /* Слайдер */
+// .slick-slider{}
+
+// /* Слайдер запущен */
+// .slick-slider.slick-initialized{}
+
+// /* Слайдер с точками */
+// .slick-slider.slick-dotted{}
+
+// /* Ограничивающая оболочка */
+// .slick-list {}
+
+// /* Лента слайдов */
+// .slick-track{}
+
+// /* Слайд */
+// .slick-slide{}
+
+// /* Слайд активный (показывается) */
+// .slick-slide.slick-active{}
+
+// /* Слайд основной */
+// .slick-slide.slick-current{}
+
+// /* Слайд по центру */
+// .slick-slide.slick-center{}
+
+// /* Клонированный слайд */
+// .slick-slide.slick-cloned{}
+
+// /* Стрелка */
+// .slick-arrow{}
+
+// /* Стрелка влево */
+// .slick-arrow.slick-prev{}
+
+// /* Стрелка вправо */
+// .slick-arrow.slick-next{}
+
+// /* Стрелка не активная */
+// .slick-arrow.slick-disabled{}
+
+// /* Точки (булиты) */
+// .slick-dots{}
+// .slick-dots li{}
+
+// /* Активная точка */
+// .slick-dots li.slick-active{}
+
+// /* Элемент точки */
+// .slick-dots li button{}
