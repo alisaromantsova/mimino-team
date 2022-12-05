@@ -52,6 +52,22 @@
       }
 }
 
+.about-kitchen .hotel__slider--second .my-slick-prev {
+  left: 145px;
+
+  @include forTabletUp {
+    left: 275px;
+  }
+}
+
+.about-kitchen .hotel__slider--second .my-slick-next {
+  left: 220px;
+
+  @include forTabletUp {
+    left: 350px;
+  }
+}
+
 .slick-arrow--white.slick-arrow--white {
   color: $white;
 }
