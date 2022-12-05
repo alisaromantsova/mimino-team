@@ -60,6 +60,17 @@ $('.hotel-x3').slick({
   }]
 });
 
+$('.hero-slider').slick({
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  // adaptiveHeight: true,
+  variableWidth: true,
+  centerMode:true
+});
+
+
 console.log(123)
+
 
 
