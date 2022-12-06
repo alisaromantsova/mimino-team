@@ -135,28 +135,29 @@
   }
 }
 .details-restaurant__first-pics {
-  width: 274px;
+  // width: 274px;
+  width: 270px;
   @include forTabletUp {
     width: 270px;
   }
 }
-.details-restaurant__second-pics {
-  width: 80px;
-  @include forTabletUp {
-    width: 162px;
-  }
-}
-.details-restaurant__third-pics {
-  display: none;
-  @include forTabletUp {
-    display: block;
-    width: 162px;
-  }
-  @include forDesktop {
-    width: 270px;
-    margin-right: -33px;
-  }
-}
+// .details-restaurant__second-pics {
+//   width: 80px;
+//   @include forTabletUp {
+//     width: 162px;
+//   }
+// }
+// .details-restaurant__third-pics {
+//   display: none;
+//   @include forTabletUp {
+//     display: block;
+//     width: 162px;
+//   }
+//   @include forDesktop {
+//     width: 270px;
+//     margin-right: -33px;
+//   }
+// }
 
 .details-restaurant__first-button {
   background: rgba(0, 0, 0, 0.4);

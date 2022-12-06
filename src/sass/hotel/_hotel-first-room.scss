@@ -4,7 +4,7 @@
   .container {
     padding-top: 32px;
     padding-bottom: 32px;
-    overflow: hidden;
+    // overflow: hidden;
     @include forTabletUp {
       position: relative;
       padding-top: 64px;

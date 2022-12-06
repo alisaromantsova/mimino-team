@@ -127,3 +127,9 @@
 .about-kitchen__pics img {
   box-shadow: $littleShadow;
 }
+
+img.resto-page{
+  @include forDesktop {
+    width: 254px;
+  }
+}
