@@ -5,6 +5,17 @@
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
+  // max-width: 414px;
+  // margin: 0 auto;
+
+  // @include forTabletUp {
+  //   max-width: 1024px;
+  //   width: 100%;
+  // }
+
+  // @include forDesktop {
+  //   max-width: 1280px;
+  // }
 
   &__logo {
     text-decoration: none;

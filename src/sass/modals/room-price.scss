@@ -6,7 +6,7 @@
   border-radius: 2px;
   width: 100vw;
   max-width: 414px;
-  background-color: $white;
+  background-color: $fonLemon;
   transform: translateX(-50%);
   z-index: 3;
   @include forTabletUp {
@@ -48,5 +48,6 @@
   line-height: 1.15;
   letter-spacing: 0.05em;
   color: #808080;
+  background-color: $fonLemon;
   cursor: pointer;
 }
