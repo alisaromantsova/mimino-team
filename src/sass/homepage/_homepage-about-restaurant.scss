@@ -13,7 +13,7 @@
 
     @include forDesktop {
       padding-top: 120px;
-      padding-bottom: 104px;
+      padding-bottom: 0px;
     }
   }
 
@@ -152,6 +152,16 @@
 
     @include forDesktop {
       margin-top: -147px;
+    }
+  }
+
+  &__block {
+    @include forTabletUp {
+      transform: translateY(-24px);
+    }
+
+    @include forDesktop {
+      transform: translateY(-108px);
     }
   }
 }
