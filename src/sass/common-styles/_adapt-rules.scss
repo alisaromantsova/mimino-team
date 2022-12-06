@@ -20,6 +20,12 @@
   margin: 0 auto;
   padding: 0 15px;
   width: 100%;
+  @media screen and (max-width: 413px) {
+    overflow: hidden;
+  }
+  @media screen and (min-width: 414px) {
+    overflow: visible;
+  }
 
   @media screen and (max-width: 1023px) {
     max-width: 414px;

@@ -31,7 +31,6 @@
 
   width: 330px;
 
-
   @include forTabletUp {
     width: 448px;
     margin-bottom: 0;
@@ -39,21 +38,20 @@
     left: 0;
   }
   @include forDesktop {
-    &.hotel-w548{
-      width:548px;
+    &.hotel-w548 {
+      width: 548px;
     }
   }
 
-  &.resto-page{
-
+  &.resto-page {
     width: 330px;
-  
-      left: 0;
+
+    left: 0;
 
     @include forTabletUp {
       margin-bottom: 0;
       width: 448px;
-  
+
       left: 0;
     }
     @include forDesktop {
@@ -61,8 +59,7 @@
     }
   }
 
-
-//homepage
+  //homepage
   .slick-arrow.slick-prev {
     width: 30px;
     height: 16px;
@@ -90,8 +87,6 @@
     &::before {
       content: '';
     }
-
-    
   }
   .slick-arrow.slick-next {
     width: 30px;
@@ -120,7 +115,6 @@
       content: '';
     }
   }
-  
 
   & .slider__item {
     margin: 0 10px;
@@ -132,24 +126,24 @@
     }
   }
   //restopage
-  &.resto-page{
+  &.resto-page {
     margin-bottom: 0;
 
     .slick-arrow.slick-prev {
       width: 30px;
       height: 16px;
-  
+
       left: 218px;
       top: 275px;
       background: url('../images//slick/slider-arrow-black-left.svg');
       background-position: center;
-  
+
       &:hover,
       &:focus {
         background: url('../images//slick/slider-arrow-yellow-left.svg');
         background-position: center;
       }
-  
+
       @include forTabletUp {
         top: 230px;
         left: 336px;
@@ -158,29 +152,27 @@
         top: 304px;
         left: 450px;
       }
-  
+
       &::before {
         content: '';
       }
-  
-      
     }
 
     .slick-arrow.slick-next {
       width: 30px;
       height: 16px;
-  
+
       right: 14px;
       top: 275px;
       background: url('../images//slick/slider-arrow-black-right.svg');
       background-position: center;
-  
+
       &:hover,
       &:focus {
         background: url('../images//slick/slider-arrow-yellow-right.svg');
         background-position: center;
       }
-  
+
       @include forTabletUp {
         top: 230px;
         right: 22px;
@@ -189,67 +181,64 @@
         top: 304px;
         right: 4px;
       }
-  
+
       &::before {
         content: '';
       }
     }
   }
   //hotel   page
-  
-  &.hotel-page{
+
+  &.hotel-page {
     margin-bottom: 72px;
 
-    @include forTabletUp{
+    @include forTabletUp {
       margin-bottom: 0;
     }
 
     .slick-arrow.slick-prev {
       width: 30px;
       height: 16px;
-  
+
       left: 218px;
       top: 275px;
       background: url('../images//slick/slider-arrow-black-left.svg');
       background-position: center;
-  
+
       &:hover,
       &:focus {
         background: url('../images//slick/slider-arrow-yellow-left.svg');
         background-position: center;
       }
-  
+
       @include forTabletUp {
         top: 230px;
         left: 0px;
       }
       @include forDesktop {
         top: 304px;
-        
       }
-  
+
       &::before {
         content: '';
       }
-  
-      
     }
 
     .slick-arrow.slick-next {
       width: 30px;
       height: 16px;
-  
+
       right: 14px;
       top: 275px;
       background: url('../images//slick/slider-arrow-black-right.svg');
       background-position: center;
-  
+
       &:hover,
       &:focus {
         background: url('../images//slick/slider-arrow-yellow-right.svg');
         background-position: center;
       }
-  
+
       @include forTabletUp {
         top: 230px;
         left: 54px;
@@ -258,13 +247,12 @@
         top: 304px;
         left: 54px;
       }
-  
+
       &::before {
         content: '';
       }
     }
   }
-
 }
 
 .restoraunt-x3 {
@@ -363,7 +351,7 @@
     // height: 220px;
   }
   @include forDesktop {
-    &.hotel-w548{
+    &.hotel-w548 {
       width: 548px;
     }
   }
@@ -443,23 +431,22 @@
     @include forDesktop {
     }
   }
-  &.hotel-page{
-
+  &.hotel-page {
     .slick-arrow.slick-prev {
       width: 30px;
       height: 16px;
-  
+
       left: 14px;
       top: 275px;
       background: url('../images//slick/slider-arrow-black-left.svg');
       background-position: center;
-  
+
       &:hover,
       &:focus {
         background: url('../images//slick/slider-arrow-yellow-left.svg');
         background-position: center;
       }
-  
+
       @include forTabletUp {
         top: 236px;
         left: 338px;
@@ -468,7 +455,7 @@
         top: 290px;
         left: 458px;
       }
-  
+
       &::before {
         content: '';
       }
@@ -476,18 +463,18 @@
     .slick-arrow.slick-next {
       width: 30px;
       height: 16px;
-  
+
       right: 220px;
       top: 275px;
       background: url('../images//slick/slider-arrow-black-right.svg');
       background-position: center;
-  
+
       &:hover,
       &:focus {
         background: url('../images//slick/slider-arrow-yellow-right.svg');
         background-position: center;
       }
-  
+
       @include forTabletUp {
         top: 236px;
         right: 24px;
@@ -496,7 +483,7 @@
         top: 290px;
         right: 0px;
       }
-  
+
       &::before {
         content: '';
       }
@@ -595,7 +582,6 @@
   }
 }
 
-
 .hero-slider {
   max-width: 413px;
   width: 100%;
@@ -665,10 +651,10 @@
   }
 }
 
-.mb-72{
+.mb-72 {
   margin-bottom: 72px;
 
-  @include forTabletUp{
+  @include forTabletUp {
     margin-bottom: 0;
   }
 }
