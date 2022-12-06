@@ -1,5 +1,6 @@
 .about-restaurant {
   background: $fonLemon;
+  position: relative;
 
   &__container {
     padding-top: 16px;
@@ -13,7 +14,9 @@
 
     @include forDesktop {
       padding-top: 120px;
-      padding-bottom: 0px;
+
+      padding-bottom: 225px;
+
     }
   }
 
@@ -155,13 +158,5 @@
     }
   }
 
-  &__block {
-    @include forTabletUp {
-      transform: translateY(-24px);
-    }
-
-    @include forDesktop {
-      transform: translateY(-108px);
-    }
-  }
 }
+

@@ -1,5 +1,6 @@
 .about-kitchen {
   background: $fonLemon;
+  position: relative;
 }
 .about-kitchen .container {
   position: relative;
@@ -11,7 +12,7 @@
   }
   @include forDesktop {
     padding-top: 120px;
-    padding-bottom: 104px;
+    padding-bottom: 207px;
   }
 }
 .about-kitchen__subtitle {
@@ -128,7 +129,7 @@
   box-shadow: $littleShadow;
 }
 
-img.resto-page{
+img.resto-page {
   @include forDesktop {
     width: 254px;
   }

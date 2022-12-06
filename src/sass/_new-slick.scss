@@ -38,7 +38,7 @@
     left: 0;
   }
   @include forDesktop {
-    top: -28px;
+    top: -140px;
     &.hotel-w548 {
       width: 548px;
     }
@@ -56,7 +56,18 @@
       left: 0;
     }
     @include forDesktop {
+      position: absolute;
       width: 542px;
+      top: 906px;
+      left: 658px;
+    }
+  }
+  &.homepage {
+    @include forDesktop {
+      position: absolute;
+      width: 542px;
+      top: 1024px;
+      left: 658px;
     }
   }
 
@@ -216,6 +227,9 @@
     @include forTabletUp {
       margin-bottom: 0;
     }
+    @include forDesktop {
+      top: 0;
+    }
 
     .slick-arrow.slick-prev {
       width: 30px;
@@ -302,6 +316,7 @@
     margin-bottom: 0;
   }
   @include forDesktop {
+    width: 840px;
   }
 
   .slick-arrow.slick-prev {
@@ -349,6 +364,7 @@
       right: 572px;
     }
     @include forDesktop {
+      right: 730px;
     }
 
     &::before {
@@ -540,6 +556,12 @@
       }
     }
   }
+  &.homepage {
+    @include forDesktop {
+      position: absolute;
+      top: 900px;
+    }
+  }
 }
 
 .hotel-x3 {
@@ -557,6 +579,7 @@
     // height: 270px;
   }
   @include forDesktop {
+    width: 852px;
   }
 
   .slick-track {
@@ -594,6 +617,7 @@
       left: 576px;
     }
     @include forDesktop {
+      left: 738px;
     }
 
     &::before {
