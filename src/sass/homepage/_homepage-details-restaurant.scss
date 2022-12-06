@@ -188,6 +188,7 @@
   @include forTabletUp {
     display: flex;
     flex-direction: row-reverse;
+  justify-content: space-between;
     gap: 29px;
     margin-left: 0;
     margin-right: 0;
