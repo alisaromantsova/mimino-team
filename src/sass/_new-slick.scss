@@ -75,6 +75,11 @@
       background-position: center;
     }
 
+    @media screen and (max-width: 413px) {
+      top: 275px;
+      left: 166px;
+    }
+
     @include forTabletUp {
       top: 236px;
       left: 336px;
@@ -101,6 +106,11 @@
     &:focus {
       background: url('../images//slick/slider-arrow-yellow-right.svg');
       background-position: center;
+    }
+
+    @media screen and (max-width: 413px) {
+      top: 275px;
+      right: 66px;
     }
 
     @include forTabletUp {
@@ -144,6 +154,11 @@
         background-position: center;
       }
 
+      @media screen and (max-width: 413px) {
+        top: 275px;
+        left: 188px;
+      }
+
       @include forTabletUp {
         top: 230px;
         left: 336px;
@@ -171,6 +186,11 @@
       &:focus {
         background: url('../images//slick/slider-arrow-yellow-right.svg');
         background-position: center;
+      }
+
+      @media screen and (max-width: 413px) {
+        top: 275px;
+        right: 46px;
       }
 
       @include forTabletUp {
@@ -211,6 +231,11 @@
         background-position: center;
       }
 
+      @media screen and (max-width: 413px) {
+        top: 275px;
+        left: 150px;
+      }
+
       @include forTabletUp {
         top: 230px;
         left: 0px;
@@ -237,6 +262,11 @@
       &:focus {
         background: url('../images//slick/slider-arrow-yellow-right.svg');
         background-position: center;
+      }
+
+      @media screen and (max-width: 413px) {
+        top: 275px;
+        left: 218px;
       }
 
       @include forTabletUp {
@@ -381,6 +411,11 @@
       background-position: center;
     }
 
+    @media screen and (max-width: 413px) {
+      top: 275px;
+      left: 84px;
+    }
+
     @include forTabletUp {
       top: 236px;
       left: 5px;
@@ -406,6 +441,11 @@
     &:focus {
       background: url('../images//slick/slider-arrow-yellow-right.svg');
       background-position: center;
+    }
+
+    @media screen and (max-width: 413px) {
+      top: 275px;
+      right: 144px;
     }
 
     @include forTabletUp {
@@ -447,6 +487,11 @@
         background-position: center;
       }
 
+      @media screen and (max-width: 413px) {
+        top: 275px;
+        left: 80px;
+      }
+
       @include forTabletUp {
         top: 236px;
         left: 338px;
@@ -473,6 +518,11 @@
       &:focus {
         background: url('../images//slick/slider-arrow-yellow-right.svg');
         background-position: center;
+      }
+
+      @media screen and (max-width: 413px) {
+        top: 275px;
+        right: 148px;
       }
 
       @include forTabletUp {
@@ -533,6 +583,11 @@
       background-position: center;
     }
 
+    @media screen and (max-width: 413px) {
+      top: 358px;
+      left: 200px;
+    }
+
     @include forTabletUp {
       top: 358px;
       left: 576px;
@@ -557,6 +612,11 @@
     &:focus {
       background: url('../images//slick/slider-arrow-yellow-right.svg');
       background-position: center;
+    }
+
+    @media screen and (max-width: 413px) {
+      top: 358px;
+      right: 88px;
     }
 
     @include forTabletUp {
