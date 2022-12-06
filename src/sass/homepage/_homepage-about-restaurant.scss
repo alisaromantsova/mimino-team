@@ -1,5 +1,6 @@
 .about-restaurant {
   background: $fonLemon;
+  position: relative;
 
   &__container {
     padding-top: 16px;
@@ -13,7 +14,7 @@
 
     @include forDesktop {
       padding-top: 120px;
-      padding-bottom: 104px;
+      padding-bottom: 225px;
     }
   }
 

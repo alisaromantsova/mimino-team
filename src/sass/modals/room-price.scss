@@ -6,7 +6,7 @@
   border-radius: 2px;
   width: 100vw;
   max-width: 414px;
-  background-color: $white;
+  background-color: $fonLemon;
   transform: translateX(-50%);
   z-index: 3;
   @include forTabletUp {
@@ -14,7 +14,7 @@
     max-width: 712px;
     padding: 60px;
     top: 250px;
-     transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     top: 50%;
   }
 }
