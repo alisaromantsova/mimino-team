@@ -5,15 +5,17 @@
         <use href="./images/icons.svg#icon-close"></use>
       </svg>
     </button>
-    <form class="form-room">
+    <form class="form-room" autocomplete="on">
       <h2 class="form__title">Забронювати номер</h2>
       <div class="form__container">
         <label class="form__label">
           <input
             required
-            type="text"
-            title="Вкажіть своє ім'я чи прізвище"
-            pattern="[a-zA-Zа-яА-Я]+"
+
+            type="name"
+            title="Вкажіть своє ім'я"
+            pattern="([a-zA-Zа-яА-Я]+)"
+
             placeholder="Ваше ім'я"
             class="form-room__input"
           />
@@ -63,7 +65,9 @@
           Дата виїзду
         </label>
       </div>
-      <button type="submit" class="form-button">Оформити бронювання</button>
+      <button type="submit" class="form-button" data-room="true">
+        Оформити бронювання
+      </button>
     </form>
   </div>
 </div>

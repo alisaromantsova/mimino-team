@@ -1,5 +1,6 @@
 .about-hotel {
   background: $fonLemon;
+  position: relative;
 }
 
 .about-hotel .container {
@@ -12,7 +13,7 @@
   }
   @include forDesktop {
     padding-top: 120px;
-    padding-bottom: 104px;
+    padding-bottom: 197px;
   }
 }
 .about-hotel__subtitle {

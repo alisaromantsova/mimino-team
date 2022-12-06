@@ -38,6 +38,7 @@
     left: 0;
   }
   @include forDesktop {
+    top: -140px;
     &.hotel-w548 {
       width: 548px;
     }
@@ -55,7 +56,18 @@
       left: 0;
     }
     @include forDesktop {
+      position: absolute;
       width: 542px;
+      top: 906px;
+      left: 658px;
+    }
+  }
+  &.homepage {
+    @include forDesktop {
+      position: absolute;
+      width: 542px;
+      top: 1024px;
+      left: 658px;
     }
   }
 
@@ -73,6 +85,11 @@
     &:focus {
       background: url('../images//slick/slider-arrow-yellow-left.svg');
       background-position: center;
+    }
+
+    @media screen and (max-width: 413px) {
+      top: 275px;
+      left: 166px;
     }
 
     @include forTabletUp {
@@ -101,6 +118,11 @@
     &:focus {
       background: url('../images//slick/slider-arrow-yellow-right.svg');
       background-position: center;
+    }
+
+    @media screen and (max-width: 413px) {
+      top: 275px;
+      right: 66px;
     }
 
     @include forTabletUp {
@@ -144,6 +166,11 @@
         background-position: center;
       }
 
+      @media screen and (max-width: 413px) {
+        top: 275px;
+        left: 188px;
+      }
+
       @include forTabletUp {
         top: 230px;
         left: 336px;
@@ -173,6 +200,11 @@
         background-position: center;
       }
 
+      @media screen and (max-width: 413px) {
+        top: 275px;
+        right: 46px;
+      }
+
       @include forTabletUp {
         top: 230px;
         right: 22px;
@@ -195,6 +227,9 @@
     @include forTabletUp {
       margin-bottom: 0;
     }
+    @include forDesktop {
+      top: 0;
+    }
 
     .slick-arrow.slick-prev {
       width: 30px;
@@ -209,6 +244,11 @@
       &:focus {
         background: url('../images//slick/slider-arrow-yellow-left.svg');
         background-position: center;
+      }
+
+      @media screen and (max-width: 413px) {
+        top: 275px;
+        left: 150px;
       }
 
       @include forTabletUp {
@@ -237,6 +277,11 @@
       &:focus {
         background: url('../images//slick/slider-arrow-yellow-right.svg');
         background-position: center;
+      }
+
+      @media screen and (max-width: 413px) {
+        top: 275px;
+        left: 218px;
       }
 
       @include forTabletUp {
@@ -271,6 +316,7 @@
     margin-bottom: 0;
   }
   @include forDesktop {
+    width: 840px;
   }
 
   .slick-arrow.slick-prev {
@@ -318,6 +364,7 @@
       right: 572px;
     }
     @include forDesktop {
+      right: 730px;
     }
 
     &::before {
@@ -381,6 +428,11 @@
       background-position: center;
     }
 
+    @media screen and (max-width: 413px) {
+      top: 275px;
+      left: 84px;
+    }
+
     @include forTabletUp {
       top: 236px;
       left: 5px;
@@ -406,6 +458,11 @@
     &:focus {
       background: url('../images//slick/slider-arrow-yellow-right.svg');
       background-position: center;
+    }
+
+    @media screen and (max-width: 413px) {
+      top: 275px;
+      right: 144px;
     }
 
     @include forTabletUp {
@@ -447,6 +504,11 @@
         background-position: center;
       }
 
+      @media screen and (max-width: 413px) {
+        top: 275px;
+        left: 80px;
+      }
+
       @include forTabletUp {
         top: 236px;
         left: 338px;
@@ -475,6 +537,11 @@
         background-position: center;
       }
 
+      @media screen and (max-width: 413px) {
+        top: 275px;
+        right: 148px;
+      }
+
       @include forTabletUp {
         top: 236px;
         right: 24px;
@@ -487,6 +554,12 @@
       &::before {
         content: '';
       }
+    }
+  }
+  &.homepage {
+    @include forDesktop {
+      position: absolute;
+      top: 900px;
     }
   }
 }
@@ -506,6 +579,7 @@
     // height: 270px;
   }
   @include forDesktop {
+    width: 852px;
   }
 
   .slick-track {
@@ -533,11 +607,17 @@
       background-position: center;
     }
 
+    @media screen and (max-width: 413px) {
+      top: 358px;
+      left: 200px;
+    }
+
     @include forTabletUp {
       top: 358px;
       left: 576px;
     }
     @include forDesktop {
+      left: 738px;
     }
 
     &::before {
@@ -557,6 +637,11 @@
     &:focus {
       background: url('../images//slick/slider-arrow-yellow-right.svg');
       background-position: center;
+    }
+
+    @media screen and (max-width: 413px) {
+      top: 358px;
+      right: 88px;
     }
 
     @include forTabletUp {
