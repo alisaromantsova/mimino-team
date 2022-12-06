@@ -2,7 +2,7 @@ $('.restoraunt-x2').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 2,
-  adaptiveHeight: true,
+  // adaptiveHeight: true,
   variableWidth: true,
 
   responsive:[{
@@ -17,7 +17,7 @@ $('.restoraunt-x3').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 2,
-  adaptiveHeight: true,
+  // adaptiveHeight: true,
   variableWidth: true,
 
   responsive:[{
@@ -32,7 +32,7 @@ $('.hotel-x2').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 2,
-  adaptiveHeight: true,
+  // adaptiveHeight: true,
   
   variableWidth: true,
   
@@ -48,7 +48,7 @@ $('.hotel-x3').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 2,
-  adaptiveHeight: true,
+  // adaptiveHeight: true,
   
   variableWidth: true,
   
