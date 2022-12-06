@@ -39,7 +39,7 @@
   outline: none;
   margin-left: auto;
   display: block;
-  background: $white;
+  background-color: $fonLemon;
   padding: 0;
   cursor: pointer;
 }
@@ -71,6 +71,7 @@
   line-height: 1.15;
   letter-spacing: 0.05em;
   color: #808080;
+  background-color: $fonLemon;
   cursor: pointer;
 }
 .form-room__label {

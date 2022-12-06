@@ -19,7 +19,7 @@ function toggleModalPrice(e) {
   if (e.target === refsPrice.openModalBtn)modalApartmentType.textContent = 'Двомісний люкс'
   if (e.target === refsPrice.openModalBtn1)modalApartmentType.textContent = 'Двомісний люкс'
   if (e.target === refsPrice.openModalBtn3)modalApartmentType.textContent = 'Двомісний номер'
-  if (e.target === refsPrice.openModalBtn2)modalApartmentType.textContent = 'Трьохісний номер'
+  if (e.target === refsPrice.openModalBtn2)modalApartmentType.textContent = 'Трьохмісний номер'
   refsPrice.modal.classList.toggle('is-hidden');
   document.body.classList.toggle('modal-open');
 }
