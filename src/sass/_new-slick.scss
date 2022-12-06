@@ -38,6 +38,7 @@
     left: 0;
   }
   @include forDesktop {
+    top: -28px;
     &.hotel-w548 {
       width: 548px;
     }
