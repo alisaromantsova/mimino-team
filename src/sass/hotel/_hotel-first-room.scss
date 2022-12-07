@@ -6,6 +6,7 @@
     padding-bottom: 32px;
     overflow: hidden;
     @include forTabletUp {
+      overflow: visible;
       position: relative;
       padding-top: 64px;
       padding-bottom: 104px;
